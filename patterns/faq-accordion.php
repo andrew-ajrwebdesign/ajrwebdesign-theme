@@ -26,8 +26,8 @@
 <!-- /wp:group -->
 
 <!-- wp:accordion -->
-<div role="group" class="wp-block-accordion"><!-- wp:accordion-item {"style":{"border":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"10px","bottomRight":"10px"}},"spacing":{"blockGap":"0"},"shadow":"var:preset|shadow|natural"},"backgroundColor":"surface"} -->
-<div class="wp-block-accordion-item has-surface-background-color has-background" style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:accordion-heading {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"fontSize":"base"} -->
+<div role="group" class="wp-block-accordion"><!-- wp:accordion-item {"style":{"border":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"10px","bottomRight":"10px"}},"spacing":{"blockGap":"0"},"shadow":"var:preset|shadow|soft"},"backgroundColor":"surface"} -->
+<div class="wp-block-accordion-item has-surface-background-color has-background" style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;box-shadow:var(--wp--preset--shadow--soft)"><!-- wp:accordion-heading {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"fontSize":"base"} -->
 <h3 class="wp-block-accordion-heading has-base-font-size"><button type="button" class="wp-block-accordion-heading__toggle" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><span class="wp-block-accordion-heading__toggle-title"><?php esc_html_e( 'Is this only for WordPress websites?', 'ajrwebdesign-theme' ); ?></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
 <!-- /wp:accordion-heading -->
 
@@ -38,8 +38,8 @@
 <!-- /wp:accordion-panel --></div>
 <!-- /wp:accordion-item -->
 
-<!-- wp:accordion-item {"style":{"border":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"10px","bottomRight":"10px"}},"spacing":{"blockGap":"0"},"shadow":"var:preset|shadow|natural"},"backgroundColor":"surface"} -->
-<div class="wp-block-accordion-item has-surface-background-color has-background" style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:accordion-heading {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"fontSize":"base"} -->
+<!-- wp:accordion-item {"style":{"border":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"10px","bottomRight":"10px"}},"spacing":{"blockGap":"0"},"shadow":"var:preset|shadow|soft"},"backgroundColor":"surface"} -->
+<div class="wp-block-accordion-item has-surface-background-color has-background" style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;box-shadow:var(--wp--preset--shadow--soft)"><!-- wp:accordion-heading {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"fontSize":"base"} -->
 <h3 class="wp-block-accordion-heading has-base-font-size"><button type="button" class="wp-block-accordion-heading__toggle" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><span class="wp-block-accordion-heading__toggle-title"><?php esc_html_e( 'What exactly is included?', 'ajrwebdesign-theme' ); ?></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
 <!-- /wp:accordion-heading -->
 
@@ -50,8 +50,8 @@
 <!-- /wp:accordion-panel --></div>
 <!-- /wp:accordion-item -->
 
-<!-- wp:accordion-item {"style":{"border":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"10px","bottomRight":"10px"}},"spacing":{"blockGap":"0"},"shadow":"var:preset|shadow|natural"},"backgroundColor":"surface"} -->
-<div class="wp-block-accordion-item has-surface-background-color has-background" style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:accordion-heading {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"fontSize":"base"} -->
+<!-- wp:accordion-item {"style":{"border":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"10px","bottomRight":"10px"}},"spacing":{"blockGap":"0"},"shadow":"var:preset|shadow|soft"},"backgroundColor":"surface"} -->
+<div class="wp-block-accordion-item has-surface-background-color has-background" style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;box-shadow:var(--wp--preset--shadow--soft)"><!-- wp:accordion-heading {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"fontSize":"base"} -->
 <h3 class="wp-block-accordion-heading has-base-font-size"><button type="button" class="wp-block-accordion-heading__toggle" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><span class="wp-block-accordion-heading__toggle-title"><?php esc_html_e( 'Will you implement the changes?', 'ajrwebdesign-theme' ); ?></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
 <!-- /wp:accordion-heading -->
 
@@ -62,8 +62,8 @@
 <!-- /wp:accordion-panel --></div>
 <!-- /wp:accordion-item -->
 
-<!-- wp:accordion-item {"style":{"border":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"10px","bottomRight":"10px"}},"spacing":{"blockGap":"0"},"shadow":"var:preset|shadow|natural"},"backgroundColor":"surface"} -->
-<div class="wp-block-accordion-item has-surface-background-color has-background" style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:accordion-heading {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"fontSize":"base"} -->
+<!-- wp:accordion-item {"style":{"border":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"10px","bottomRight":"10px"}},"spacing":{"blockGap":"0"},"shadow":"var:preset|shadow|soft"},"backgroundColor":"surface"} -->
+<div class="wp-block-accordion-item has-surface-background-color has-background" style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;box-shadow:var(--wp--preset--shadow--soft)"><!-- wp:accordion-heading {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"fontSize":"base"} -->
 <h3 class="wp-block-accordion-heading has-base-font-size"><button type="button" class="wp-block-accordion-heading__toggle" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><span class="wp-block-accordion-heading__toggle-title"><?php esc_html_e( 'How will I receive it?', 'ajrwebdesign-theme' ); ?></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
 <!-- /wp:accordion-heading -->
 
@@ -74,8 +74,8 @@
 <!-- /wp:accordion-panel --></div>
 <!-- /wp:accordion-item -->
 
-<!-- wp:accordion-item {"style":{"border":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"10px","bottomRight":"10px"}},"spacing":{"blockGap":"0"},"shadow":"var:preset|shadow|natural"},"backgroundColor":"surface"} -->
-<div class="wp-block-accordion-item has-surface-background-color has-background" style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:accordion-heading {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"fontSize":"base"} -->
+<!-- wp:accordion-item {"style":{"border":{"radius":{"topLeft":"10px","topRight":"10px","bottomLeft":"10px","bottomRight":"10px"}},"spacing":{"blockGap":"0"},"shadow":"var:preset|shadow|soft"},"backgroundColor":"surface"} -->
+<div class="wp-block-accordion-item has-surface-background-color has-background" style="border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;box-shadow:var(--wp--preset--shadow--soft)"><!-- wp:accordion-heading {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"fontSize":"base"} -->
 <h3 class="wp-block-accordion-heading has-base-font-size"><button type="button" class="wp-block-accordion-heading__toggle" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><span class="wp-block-accordion-heading__toggle-title"><?php esc_html_e( 'Is this for me if I’m unsure what’s wrong?', 'ajrwebdesign-theme' ); ?></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
 <!-- /wp:accordion-heading -->
 

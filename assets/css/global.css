@@ -81,6 +81,14 @@ a {
 	border-width: 0;
 }
 
+/* Header: white bar with the site-wide soft shadow (one shadow token
+   everywhere — theme.json settings.shadow.presets "soft"). */
+.site-header {
+	box-shadow: var(--wp--preset--shadow--soft);
+	position: relative;
+	z-index: 90;
+}
+
 /* Fixed header (desktop) — ported from the old child theme; the 829px
    breakpoint matches the live site. Offset comes from theme.json
    custom.header.offset so it is defined once. */
