@@ -129,6 +129,43 @@ a {
 	margin: 0;
 }
 
+/* ---------------------------------------------------------------------------
+ * Dark hero card — any .hero-section with a background (the hero-dark
+ * gradient block attribute) becomes the rounded dark card. One hook,
+ * token-driven, identical on every page.
+ * ------------------------------------------------------------------------- */
+.hero-section.has-background {
+	border-radius: var(--wp--custom--radius--lg);
+	overflow: hidden;
+	margin-top: var(--wp--preset--spacing--50);
+	padding-inline: var(--wp--preset--spacing--60);
+}
+
+.hero-section.has-background h1 {
+	color: #ffffff;
+}
+
+/* Hero copy on dark: light slate for body text, mint for the eyebrow.
+   !important counters WP's preset color classes (which are !important).
+   (Palette-token candidates if they spread beyond the hero.) */
+.hero-section.has-background p.has-muted-color {
+	color: #b8c6d6 !important;
+}
+
+.hero-section.has-background p.has-accent-dark-color {
+	color: #7fe0c3 !important;
+}
+
+.hero-section.has-background .wp-block-button__link {
+	color: #ffffff !important;
+	border-color: rgba(255, 255, 255, 0.65) !important;
+	background: transparent !important;
+}
+
+.hero-section.has-background .wp-block-button__link:hover {
+	background: rgba(255, 255, 255, 0.12) !important;
+}
+
 /* Mobile: the live design compresses the two largest spacing presets,
    removes hero top padding, and allows column stacks to reverse. */
 @media (max-width: 781px) {
