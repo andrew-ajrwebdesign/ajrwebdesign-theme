@@ -103,6 +103,12 @@ a {
 		background: var(--wp--preset--color--bg);
 	}
 
+	/* Logged in: sit below the admin bar instead of underneath it. */
+	.admin-bar header.wp-block-template-part,
+	.admin-bar .site-header {
+		inset-block-start: var(--wp-admin--admin-bar--height, 32px);
+	}
+
 	main.wp-block-group,
 	main.entry-content {
 		padding-block-start: var(--wp--custom--header--offset, 85px);
