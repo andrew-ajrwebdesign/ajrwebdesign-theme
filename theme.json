@@ -15,7 +15,7 @@
 				"lg": "20px"
 			},
 			"header": {
-				"offset": "85px"
+				"offset": "72px"
 			},
 			"shadow": {
 				"dropdown": "var(--wp--preset--shadow--soft)"
