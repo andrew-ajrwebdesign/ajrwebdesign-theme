@@ -50,6 +50,9 @@
 				{ "slug": "primary", "color": "#0f766e", "name": "Primary" },
 				{ "slug": "accent", "color": "#0e7f56", "name": "Accent" },
 				{ "slug": "accent-dark", "color": "#06634c", "name": "Accent Dark" },
+				{ "slug": "accent-light", "color": "#7fe0c3", "name": "Accent Light" },
+				{ "slug": "accent-tint", "color": "#e9f4ec", "name": "Accent Tint" },
+				{ "slug": "muted-light", "color": "#b8c6d6", "name": "Muted Light" },
 				{ "slug": "warning", "color": "#f59e0b", "name": "Warning" }
 			],
 			"gradients": [
@@ -200,7 +203,7 @@
 				"color": {
 					"background": "var(--wp--preset--color--accent)",
 					"gradient": "var(--wp--preset--gradient--button-green)",
-					"text": "#ffffff"
+					"text": "var(--wp--preset--color--bg)"
 				},
 				"typography": {
 					"fontSize": "16px",
@@ -248,7 +251,7 @@
 				"color": {
 					"background": "var(--wp--preset--color--accent)",
 					"gradient": "var(--wp--preset--gradient--button-green)",
-					"text": "#ffffff"
+					"text": "var(--wp--preset--color--bg)"
 				},
 				"typography": {
 					"fontSize": "16px",

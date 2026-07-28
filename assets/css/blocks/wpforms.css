@@ -1,0 +1,17 @@
+/* WPForms — re-brand the form controls via WPForms' own CSS variables so
+   the hex values stored in the form's block settings are inert. Tokens only. */
+.wpforms-container,
+.wpforms-block {
+	--wpforms-buttonBackgroundColor: var(--wp--preset--color--accent);
+	--wpforms-buttonBorderColor: var(--wp--preset--color--accent);
+	--wpforms-buttonTextColor: var(--wp--preset--color--bg);
+	--wpforms-pageBreakColor: var(--wp--preset--color--accent);
+	--wpforms-fieldBorderColor: var(--wp--preset--color--border);
+	--wpforms-labelColor: var(--wp--preset--color--ink);
+	--wpforms-labelSublabelColor: var(--wp--preset--color--muted);
+}
+
+.wpforms-container .wpforms-submit:hover {
+	background-color: var(--wp--preset--color--accent-dark) !important;
+	border-color: var(--wp--preset--color--accent-dark) !important;
+}

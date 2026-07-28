@@ -142,33 +142,57 @@ a {
 }
 
 .hero-section.has-background h1 {
-	color: #ffffff;
+	color: var(--wp--preset--color--bg);
 }
 
 /* Hero copy on dark: light slate for body text, mint for the eyebrow.
-   !important counters WP's preset color classes (which are !important).
-   (Palette-token candidates if they spread beyond the hero.) */
+   !important counters WP's preset color classes (which are !important). */
 .hero-section.has-background p.has-muted-color {
-	color: #b8c6d6 !important;
+	color: var(--wp--preset--color--muted-light) !important;
 }
 
 .hero-section.has-background p.has-accent-dark-color {
-	color: #7fe0c3 !important;
+	color: var(--wp--preset--color--accent-light) !important;
 }
 
 /* Inline links in hero copy: white for contrast on the dark card. */
 .hero-section.has-background a:not(.wp-block-button__link) {
-	color: #ffffff !important;
+	color: var(--wp--preset--color--bg) !important;
 }
 
 .hero-section.has-background .wp-block-button__link {
-	color: #ffffff !important;
-	border-color: rgba(255, 255, 255, 0.65) !important;
+	color: var(--wp--preset--color--bg) !important;
+	border-color: color-mix(in srgb, var(--wp--preset--color--bg) 65%, transparent) !important;
 	background: transparent !important;
 }
 
 .hero-section.has-background .wp-block-button__link:hover {
-	background: rgba(255, 255, 255, 0.12) !important;
+	background: color-mix(in srgb, var(--wp--preset--color--bg) 12%, transparent) !important;
+}
+
+/* ---------------------------------------------------------------------------
+ * Trust strip — tinted band under the hero; icon tiles are perfect white
+ * circles with the site-wide shadow. Colors are all tokens.
+ * ------------------------------------------------------------------------- */
+.trust-strip .wp-block-group.has-bg-background-color {
+	width: 56px;
+	height: 56px;
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	padding: 0 !important;
+	box-shadow: var(--wp--preset--shadow--soft);
+}
+
+.trust-strip .wp-block-group.has-bg-background-color img {
+	width: 24px !important;
+	height: auto !important;
+}
+
+.trust-strip .wp-block-group.has-bg-background-color figure {
+	margin: 0;
 }
 
 /* Mobile: the live design compresses the two largest spacing presets,

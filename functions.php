@@ -100,21 +100,22 @@ add_action(
 	'init',
 	function () {
 		$block_styles = array(
-			'core/button'     => 'button',
-			'core/navigation' => 'navigation',
-			'core/search'     => 'search',
-			'core/comments'   => 'comments',
-			'core/list'       => 'list',
-			'core/group'      => 'group',
+			'core/button'            => 'core/button',
+			'core/navigation'        => 'core/navigation',
+			'core/search'            => 'core/search',
+			'core/comments'          => 'core/comments',
+			'core/list'              => 'core/list',
+			'core/group'             => 'core/group',
+			'wpforms/form-selector'  => 'wpforms',
 		);
 
 		foreach ( $block_styles as $block => $file ) {
-			$path = "/assets/css/blocks/core/{$file}.css";
+			$path = "/assets/css/blocks/{$file}.css";
 
 			wp_enqueue_block_style(
 				$block,
 				array(
-					'handle' => "ajrwebdesign-theme-{$file}",
+					'handle' => 'ajrwebdesign-theme-' . str_replace( '/', '-', $file ),
 					'src'    => get_theme_file_uri( $path ),
 					'path'   => get_theme_file_path( $path ),
 					'ver'    => wp_get_theme()->get( 'Version' ),
