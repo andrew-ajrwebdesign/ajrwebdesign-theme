@@ -1,0 +1,21 @@
+/*
+ * Block: core/search
+ * Loaded only when a Search block is on the page.
+ */
+
+.wp-block-search__input {
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: 0.375rem;
+	padding: 0.5rem 0.75rem;
+	transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.wp-block-search__input:focus-visible {
+	outline: none;
+	border-color: var(--wp--preset--color--primary);
+	box-shadow: 0 0 0 3px color-mix(in srgb, var(--wp--preset--color--primary) 20%, transparent);
+}
+
+.wp-block-search__button {
+	transition: background-color 150ms ease;
+}

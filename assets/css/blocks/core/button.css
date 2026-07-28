@@ -1,0 +1,19 @@
+/*
+ * Block: core/button
+ * Loaded only when a Button block is on the page.
+ * Adds transitions and focus ring — things theme.json cannot express.
+ */
+
+.wp-block-button__link {
+	transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
+}
+
+.wp-block-button__link:focus-visible {
+	outline: 2px solid var(--wp--preset--color--primary);
+	outline-offset: 3px;
+}
+
+/* Outlined style variant */
+.wp-block-button.is-style-outline .wp-block-button__link {
+	transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
+}

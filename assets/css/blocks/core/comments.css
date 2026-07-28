@@ -1,0 +1,15 @@
+/*
+ * Block: core/comments
+ * Loaded only when a Comments block is on the page.
+ */
+
+.wp-block-comment-author-name a {
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.wp-block-comments-title {
+	border-block-end: 1px solid var(--wp--preset--color--border);
+	padding-block-end: var(--wp--preset--spacing--4);
+	margin-block-end: var(--wp--preset--spacing--6);
+}

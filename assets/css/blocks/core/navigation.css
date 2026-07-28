@@ -1,0 +1,19 @@
+/*
+ * Block: core/navigation
+ * Loaded only when a Navigation block is on the page.
+ */
+
+.wp-block-navigation a {
+	transition: color 150ms ease;
+}
+
+.wp-block-navigation a:focus-visible {
+	outline: 2px solid var(--wp--preset--color--primary);
+	outline-offset: 3px;
+	border-radius: 3px;
+}
+
+/* Mobile menu overlay */
+.wp-block-navigation__responsive-container.is-menu-open {
+	background-color: var(--wp--preset--color--background);
+}

@@ -1,0 +1,134 @@
+/*
+ * Global stylesheet — loaded on every page (front-end + editor).
+ *
+ * Only styles that theme.json cannot express live here:
+ * box-model reset, font smoothing, transitions, focus rings,
+ * skip link, and utility classes.
+ *
+ * Keep this file as small as possible. Block-specific styles
+ * belong in assets/css/blocks/core/{block}.css.
+ */
+
+/* Box model reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Body baseline */
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+/* Images */
+img,
+picture,
+video,
+svg {
+	display: block;
+	max-inline-size: 100%;
+	block-size: auto;
+}
+
+/* Transitions on interactive elements */
+a {
+	transition: color 150ms ease;
+}
+
+/* Consistent focus ring across all interactive elements */
+:focus-visible {
+	outline: 2px solid var(--wp--preset--color--primary);
+	outline-offset: 3px;
+	border-radius: 3px;
+}
+
+/* Remove default focus outline — only show focus-visible ring above */
+:focus:not(:focus-visible) {
+	outline: none;
+}
+
+/* Skip to content link */
+.skip-link {
+	position: absolute;
+	inset-block-start: -100%;
+	inset-inline-start: 1rem;
+	z-index: 9999;
+	padding: 0.75rem 1.5rem;
+	background-color: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--background);
+	font-weight: 600;
+	text-decoration: none;
+	border-radius: 0 0 0.375rem 0.375rem;
+}
+
+.skip-link:focus {
+	inset-block-start: 0;
+}
+
+/* Screen reader only */
+.sr-only {
+	position: absolute;
+	inline-size: 1px;
+	block-size: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
+/* Fixed header (desktop) — ported from the old child theme; the 829px
+   breakpoint matches the live site. Offset comes from theme.json
+   custom.header.offset so it is defined once. */
+@media (min-width: 829px) {
+	header.wp-block-template-part,
+	.site-header {
+		position: fixed;
+		inset-block-start: 0;
+		inset-inline: 0;
+		z-index: 100;
+	}
+
+	main.wp-block-group,
+	.wp-site-blocks > main {
+		padding-block-start: var(--wp--custom--header--offset, 85px);
+	}
+}
+
+/* Page content flush inside templates (old child-theme rule) */
+.page .wp-block-post-content {
+	margin: 0;
+}
+
+/* Mobile: the live design compresses the two largest spacing presets and
+   allows column stacks to reverse (e.g. text-under-image heroes). */
+@media (max-width: 781px) {
+	:root {
+		--wp--preset--spacing--80: 20px;
+		--wp--preset--spacing--70: 20px;
+	}
+
+	.wp-block-columns.reverse {
+		flex-direction: column-reverse;
+	}
+}
+
+/* Polylang language switcher — plain inline list, no bullets */
+.wp-block-polylang-language-switcher ul,
+ul.polylang-langswitcher {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* SimpleTOC list spacing (plugin fix carried from the old theme) */
+.simpletoc-list li {
+	margin-block-end: 0.4rem;
+}

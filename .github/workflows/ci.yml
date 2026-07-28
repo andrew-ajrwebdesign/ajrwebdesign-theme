@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the pushed commit
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Validate theme.json
+        run: python3 -m json.tool theme.json > /dev/null
+
+      - name: PHP lint
+        run: find . -name '*.php' -not -path './vendor/*' -print0 | xargs -0 -n1 php -l
+
+      - name: No wp:html blobs in templates or patterns
+        run: |
+          if grep -rn 'wp:html' templates parts patterns; then
+            echo 'wp:html found — real blocks only.' >&2
+            exit 1
+          fi

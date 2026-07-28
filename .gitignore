@@ -1,0 +1,20 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*Zone.Identifier
+
+# Logs
+*.log
+
+# Dependencies / build output
+node_modules/
+*.zip
+
+# Environment / secrets
+.env
+.env.*
+
+# Tooling
+.claude/
