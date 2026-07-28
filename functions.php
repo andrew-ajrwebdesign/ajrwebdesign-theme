@@ -30,10 +30,20 @@ add_action(
 		add_theme_support(
 			'ajrwebdesign-core-i18n',
 			array(
+				// Footer.
 				'Main Nav',
 				'Services',
 				'Get in Touch',
 				'© 2026 ajrwebdesign. All rights reserved.',
+				// Blog home template (renders the DE Ressourcen page too).
+				'WordPress Performance & SEO Resources',
+				'Practical guides for faster, cleaner WordPress websites',
+				'Clear, practical articles for improving WordPress performance, technical SEO, Core Web Vitals, site structure, and long-term maintainability. These resources are written for business owners, marketing teams, and website managers who want to understand what is holding their site back — without getting buried in technical noise.',
+				'Start here',
+				'Helpful guides for improving your WordPress website',
+				'These articles focus on the technical issues that often affect WordPress websites the most: slow loading pages, weak SEO foundations, poor site structure, plugin bloat, and confusing performance reports.',
+				'Explore the Guides',
+				'Book a Call',
 			)
 		);
 	}

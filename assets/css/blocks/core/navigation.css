@@ -30,7 +30,7 @@
 	border-radius: var(--wp--custom--radius--md);
 	background: var(--wp--preset--gradient--button-green);
 	background-color: var(--wp--preset--color--accent) !important;
-	color: #fff !important;
+	color: var(--wp--preset--color--bg) !important;
 	font-family: inherit;
 	font-size: clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.227), 16px);
 	font-style: inherit;
