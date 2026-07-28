@@ -1,0 +1,22 @@
+/* core/list — checkmark list style (registered in functions.php). */
+ul.is-style-checkmark-list,
+ul.wp-block-list.is-style-checkmark-list {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+ul.is-style-checkmark-list li,
+ul.wp-block-list.is-style-checkmark-list li {
+	position: relative;
+	padding-left: 1.75rem;
+}
+
+ul.is-style-checkmark-list li::before,
+ul.wp-block-list.is-style-checkmark-list li::before {
+	content: "\2713";
+	position: absolute;
+	left: 0;
+	color: var(--wp--preset--color--accent);
+	font-weight: 700;
+}

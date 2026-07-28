@@ -58,7 +58,7 @@ a {
 	z-index: 9999;
 	padding: 0.75rem 1.5rem;
 	background-color: var(--wp--preset--color--primary);
-	color: var(--wp--preset--color--background);
+	color: var(--wp--preset--color--bg);
 	font-weight: 600;
 	text-decoration: none;
 	border-radius: 0 0 0.375rem 0.375rem;
@@ -89,14 +89,25 @@ a {
 	.site-header {
 		position: fixed;
 		inset-block-start: 0;
-		inset-inline: 0;
 		z-index: 100;
+		width: 100%;
+		margin: 0 auto;
+		background: var(--wp--preset--color--bg);
 	}
 
 	main.wp-block-group,
-	.wp-site-blocks > main {
+	main.entry-content {
 		padding-block-start: var(--wp--custom--header--offset, 85px);
+		margin-block-start: 0;
 	}
+}
+
+/* Logo sizing (ported verbatim — the !important beats core inline sizing) */
+.wp-block-site-logo img.custom-logo,
+.wp-block-site-logo .custom-logo {
+	width: 140px !important;
+	height: auto !important;
+	max-width: 100%;
 }
 
 /* Page content flush inside templates (old child-theme rule) */
@@ -104,31 +115,34 @@ a {
 	margin: 0;
 }
 
-/* Mobile: the live design compresses the two largest spacing presets and
-   allows column stacks to reverse (e.g. text-under-image heroes). */
+/* Mobile: the live design compresses the two largest spacing presets,
+   removes hero top padding, and allows column stacks to reverse. */
 @media (max-width: 781px) {
+	.wp-block-group.hero-section {
+		padding-top: 0 !important;
+	}
+
+	.wp-block-columns.reverse {
+		flex-direction: column-reverse !important;
+	}
+
 	:root {
 		--wp--preset--spacing--80: 20px;
 		--wp--preset--spacing--70: 20px;
 	}
-
-	.wp-block-columns.reverse {
-		flex-direction: column-reverse;
-	}
 }
 
-/* Polylang language switcher — plain inline list, no bullets */
-.wp-block-polylang-language-switcher ul,
-ul.polylang-langswitcher {
-	display: flex;
-	align-items: center;
-	gap: 0.5rem;
-	margin: 0;
-	padding: 0;
+/* Polylang language switcher (ported verbatim) */
+.wp-block-polylang-language-switcher {
 	list-style: none;
+	padding-left: 25px;
 }
 
-/* SimpleTOC list spacing (plugin fix carried from the old theme) */
+/* Simple TOC (plugin fix carried from the old theme) */
 .simpletoc-list li {
-	margin-block-end: 0.4rem;
+	padding: 6px 0;
+}
+
+.simpletoc-list li a {
+	text-decoration: none;
 }

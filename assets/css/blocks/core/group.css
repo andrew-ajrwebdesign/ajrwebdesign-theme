@@ -1,0 +1,19 @@
+/* core/group — service card equal-height internals.
+   Applies to both the legacy .service-card-inner class (existing content)
+   and the registered is-style-service-card variation (new content). */
+.service-card-inner,
+.is-style-service-card {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.service-card-inner > .wp-block-group:first-child,
+.is-style-service-card > .wp-block-group:first-child {
+	flex: 1;
+}
+
+.service-card-inner > .wp-block-group:last-child,
+.is-style-service-card > .wp-block-group:last-child {
+	margin-top: auto;
+}

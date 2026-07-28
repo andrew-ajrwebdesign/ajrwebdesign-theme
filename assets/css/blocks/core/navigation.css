@@ -15,5 +15,36 @@
 
 /* Mobile menu overlay */
 .wp-block-navigation__responsive-container.is-menu-open {
-	background-color: var(--wp--preset--color--background);
+	background-color: var(--wp--preset--color--bg);
+}
+
+/* Nav CTA item — a menu entry with the .menu-button class renders as the
+   gradient button (ported verbatim from the old child theme). */
+.menu-button {
+	padding: 10px 20px !important;
+}
+
+.is-responsive.items-justified-right .menu-button {
+	padding: 0.9rem 1.5rem;
+	border-width: 0;
+	border-radius: var(--wp--custom--radius--md);
+	background: var(--wp--preset--gradient--button-green);
+	background-color: var(--wp--preset--color--accent) !important;
+	color: #fff !important;
+	font-family: inherit;
+	font-size: clamp(14px, 0.875rem + ((1vw - 3.2px) * 0.227), 16px);
+	font-style: inherit;
+	font-weight: 500;
+	letter-spacing: inherit;
+	line-height: inherit;
+	text-decoration: none;
+	text-transform: inherit;
+}
+
+/* Mobile navigation submenu spacing (ported) */
+.wp-block-navigation__responsive-container.is-menu-open
+.wp-block-navigation__responsive-container-content
+.has-child
+.wp-block-navigation__submenu-container {
+	padding-right: 0;
 }
