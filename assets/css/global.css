@@ -130,15 +130,30 @@ a {
 }
 
 /* ---------------------------------------------------------------------------
- * Dark hero card — any .hero-section with a background (the hero-dark
- * gradient block attribute) becomes the rounded dark card. One hook,
- * token-driven, identical on every page.
+ * Full-bleed dark hero — any .hero-section with a background (the hero-dark
+ * gradient block attribute + alignfull). Sits flush against the header above
+ * and the trust strip below. One hook, token-driven, identical on every page.
  * ------------------------------------------------------------------------- */
 .hero-section.has-background {
-	border-radius: var(--wp--custom--radius--lg);
-	overflow: hidden;
-	margin-top: var(--wp--preset--spacing--50);
-	padding-inline: var(--wp--preset--spacing--60);
+	margin-block-start: 0;
+}
+
+/* theme.json rounds every core/group (the card look) — full-width bands
+   must not be. Kills the corner nicks on hero, trust strip, and any
+   future alignfull band. */
+.wp-block-group.alignfull {
+	border-radius: 0;
+}
+
+/* Flush: no root blockGap between the (fixed or static) header and content,
+   and none between the hero and the trust strip band directly under it. */
+main.wp-block-group,
+main.entry-content {
+	margin-block-start: 0;
+}
+
+.hero-section.has-background + .trust-strip {
+	margin-block-start: 0;
 }
 
 .hero-section.has-background h1 {
