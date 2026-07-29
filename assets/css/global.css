@@ -156,6 +156,13 @@ main.entry-content {
 	margin-block-start: 0;
 }
 
+/* The full-bleed dark CTA is the last block before the footer on most
+   pages — close the root blockGap so the bands meet cleanly. */
+footer.wp-block-template-part,
+.site-footer {
+	margin-block-start: 0;
+}
+
 .hero-section.has-background h1 {
 	color: var(--wp--preset--color--bg);
 }
