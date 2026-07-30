@@ -53,7 +53,9 @@
 				{ "slug": "accent-light", "color": "#7fe0c3", "name": "Accent Light" },
 				{ "slug": "accent-tint", "color": "#e9f4ec", "name": "Accent Tint" },
 				{ "slug": "muted-light", "color": "#b8c6d6", "name": "Muted Light" },
-				{ "slug": "warning", "color": "#f59e0b", "name": "Warning" }
+				{ "slug": "warning", "color": "#f59e0b", "name": "Warning" },
+				{ "slug": "score-red", "color": "#ff4e42", "name": "Score Red (PSI)" },
+				{ "slug": "score-green", "color": "#0cce6b", "name": "Score Green (PSI)" }
 			],
 			"gradients": [
 				{
