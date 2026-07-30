@@ -14,9 +14,9 @@
 <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"33%","layout":{"type":"default"}} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33%"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","orientation":"horizontal"}} -->
 <div class="wp-block-group"><!-- wp:group {"backgroundColor":"bg","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-bg-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"id":368,"scale":"cover","sizeSlug":"full","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full"><img src="/wp-content/uploads/2026/04/verified.png" alt="Shield Icon" class="wp-image-368" style="object-fit:cover"/></figure>
-<!-- /wp:image --></div>
+<div class="wp-block-group has-bg-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"className":"card-ico card-ico--shield","layout":{"type":"default"}} -->
+<div class="wp-block-group card-ico card-ico--shield"></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","contentSize":""}} -->
@@ -34,9 +34,9 @@
 <!-- wp:column {"verticalAlignment":"center","width":"33%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33%"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:group {"backgroundColor":"bg","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-bg-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"id":387,"width":"30px","aspectRatio":"1.0204436711613745","scale":"cover","sizeSlug":"full","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2026/04/star.png" alt="Star Icon" class="wp-image-387" style="aspect-ratio:1.0204436711613745;object-fit:cover;width:30px"/></figure>
-<!-- /wp:image --></div>
+<div class="wp-block-group has-bg-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"className":"card-ico card-ico--star","layout":{"type":"default"}} -->
+<div class="wp-block-group card-ico card-ico--star"></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","contentSize":""}} -->
@@ -54,9 +54,9 @@
 <!-- wp:column {"verticalAlignment":"center","width":"33%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:33%"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:group {"backgroundColor":"bg","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-bg-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"id":374,"width":"35px","sizeSlug":"full","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2026/04/bricks.png" alt="Building Block Icon" class="wp-image-374" style="width:35px"/></figure>
-<!-- /wp:image --></div>
+<div class="wp-block-group has-bg-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"className":"card-ico card-ico--bricks","layout":{"type":"default"}} -->
+<div class="wp-block-group card-ico card-ico--bricks"></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","contentSize":""}} -->

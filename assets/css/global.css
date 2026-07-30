@@ -171,11 +171,14 @@ footer.wp-block-template-part,
 	background-color: var(--wp--preset--color--bg);
 }
 
-/* Service card icons — alpha-mask SVGs painted with the primary token,
-   same system as the nav dropdown (nav-ico). PNG icons retired. */
+/* Content icons — alpha-mask SVGs painted with the primary token, same
+   system as the nav dropdown (nav-ico). PNG icons retired site-wide; the
+   auto inline margins center the icon wherever the old figure was
+   aligncenter (they resolve to zero inside shrink-wrapped flex boxes). */
 .wp-block-group.card-ico {
 	width: 28px;
 	height: 28px;
+	margin-inline: auto;
 	background-color: var(--wp--preset--color--primary);
 	-webkit-mask-repeat: no-repeat;
 	mask-repeat: no-repeat;
@@ -205,6 +208,31 @@ footer.wp-block-template-part,
 .card-ico--search { -webkit-mask-image: url("../img/icons/search.svg"); mask-image: url("../img/icons/search.svg"); }
 .card-ico--code { -webkit-mask-image: url("../img/icons/code.svg"); mask-image: url("../img/icons/code.svg"); }
 .card-ico--clipboard { -webkit-mask-image: url("../img/icons/clipboard.svg"); mask-image: url("../img/icons/clipboard.svg"); }
+.card-ico--shield { -webkit-mask-image: url("../img/icons/shield.svg"); mask-image: url("../img/icons/shield.svg"); }
+.card-ico--star { -webkit-mask-image: url("../img/icons/star.svg"); mask-image: url("../img/icons/star.svg"); }
+.card-ico--bricks { -webkit-mask-image: url("../img/icons/bricks.svg"); mask-image: url("../img/icons/bricks.svg"); }
+.card-ico--boxes { -webkit-mask-image: url("../img/icons/boxes.svg"); mask-image: url("../img/icons/boxes.svg"); }
+.card-ico--messages { -webkit-mask-image: url("../img/icons/messages.svg"); mask-image: url("../img/icons/messages.svg"); }
+.card-ico--window-code { -webkit-mask-image: url("../img/icons/window-code.svg"); mask-image: url("../img/icons/window-code.svg"); }
+.card-ico--coin { -webkit-mask-image: url("../img/icons/coin.svg"); mask-image: url("../img/icons/coin.svg"); }
+.card-ico--cog { -webkit-mask-image: url("../img/icons/cog.svg"); mask-image: url("../img/icons/cog.svg"); }
+.card-ico--bulb { -webkit-mask-image: url("../img/icons/bulb.svg"); mask-image: url("../img/icons/bulb.svg"); }
+.card-ico--bulb-check { -webkit-mask-image: url("../img/icons/bulb-check.svg"); mask-image: url("../img/icons/bulb-check.svg"); }
+.card-ico--question { -webkit-mask-image: url("../img/icons/question.svg"); mask-image: url("../img/icons/question.svg"); }
+.card-ico--cart { -webkit-mask-image: url("../img/icons/cart.svg"); mask-image: url("../img/icons/cart.svg"); }
+.card-ico--headset { -webkit-mask-image: url("../img/icons/headset.svg"); mask-image: url("../img/icons/headset.svg"); }
+
+/* Comparison-table checkmarks (maintenance pricing tables) — inline mask
+   span replacing the old check-icon.png cell images. */
+.wp-block-table .td-check {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	background-color: var(--wp--preset--color--primary);
+	-webkit-mask: url("../img/icons/circle-check.svg") center / contain no-repeat;
+	mask: url("../img/icons/circle-check.svg") center / contain no-repeat;
+}
 
 .hero-section.has-background h1 {
 	color: var(--wp--preset--color--bg);
@@ -260,6 +288,13 @@ footer.wp-block-template-part,
 
 .trust-strip .wp-block-group.has-bg-background-color figure {
 	margin: 0;
+}
+
+/* Mask icons sit slightly smaller in the 56px circles, matching the old
+   24px badge images. */
+.trust-strip .wp-block-group.card-ico {
+	width: 24px;
+	height: 24px;
 }
 
 /* Mobile: the live design compresses the two largest spacing presets,
