@@ -99,6 +99,27 @@ add_action(
 );
 
 /**
+ * Asset version for cache-busting.
+ *
+ * Production uses the theme version (bumped per release). Everywhere else
+ * the file's mtime is used, so every local CSS edit busts browser and
+ * page caches immediately — stale-stylesheet layouts (fixed-header offset
+ * missing, visible skip link) cannot recur in dev.
+ *
+ * @param string $relative_path Theme-relative asset path.
+ * @return string Version string for wp_enqueue_style().
+ */
+function ajrwd_asset_version( $relative_path ) {
+	if ( 'production' === wp_get_environment_type() ) {
+		return wp_get_theme()->get( 'Version' );
+	}
+
+	$file = get_theme_file_path( $relative_path );
+
+	return file_exists( $file ) ? (string) filemtime( $file ) : wp_get_theme()->get( 'Version' );
+}
+
+/**
  * Register per-block stylesheets.
  *
  * Loaded only when the block is present on the page — better performance
@@ -128,7 +149,7 @@ add_action(
 					'handle' => 'ajrwebdesign-theme-' . str_replace( '/', '-', $file ),
 					'src'    => get_theme_file_uri( $path ),
 					'path'   => get_theme_file_path( $path ),
-					'ver'    => wp_get_theme()->get( 'Version' ),
+					'ver'    => ajrwd_asset_version( $path ),
 				)
 			);
 		}
@@ -150,7 +171,7 @@ add_action(
 			'ajrwebdesign-theme-global',
 			get_theme_file_uri( 'assets/css/global.css' ),
 			array(),
-			wp_get_theme()->get( 'Version' )
+			ajrwd_asset_version( 'assets/css/global.css' )
 		);
 	}
 );

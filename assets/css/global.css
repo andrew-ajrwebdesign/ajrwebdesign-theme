@@ -190,13 +190,15 @@ footer.wp-block-template-part,
 	color: var(--wp--preset--color--bg) !important;
 }
 
-.hero-section.has-background .wp-block-button__link {
+.hero-section.has-background .wp-block-button__link,
+.cta-section.has-background .wp-block-button__link {
 	color: var(--wp--preset--color--bg) !important;
 	border-color: color-mix(in srgb, var(--wp--preset--color--bg) 65%, transparent) !important;
 	background: transparent !important;
 }
 
-.hero-section.has-background .wp-block-button__link:hover {
+.hero-section.has-background .wp-block-button__link:hover,
+.cta-section.has-background .wp-block-button__link:hover {
 	background: color-mix(in srgb, var(--wp--preset--color--bg) 12%, transparent) !important;
 }
 

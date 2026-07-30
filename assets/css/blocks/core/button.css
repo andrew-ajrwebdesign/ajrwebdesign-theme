@@ -1,11 +1,12 @@
 /*
  * Block: core/button
  * Loaded only when a Button block is on the page.
- * Adds transitions and focus ring — things theme.json cannot express.
+ * Adds transitions, focus ring, and hover states — things theme.json
+ * cannot express.
  */
 
 .wp-block-button__link {
-	transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
+	transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease, filter 150ms ease, box-shadow 150ms ease;
 }
 
 .wp-block-button__link:focus-visible {
@@ -13,7 +14,20 @@
 	outline-offset: 3px;
 }
 
+/* Filled buttons: brighten the gradient and lift with the site shadow.
+   filter is the only way to lighten a gradient background on hover. */
+.wp-block-button:not(.is-style-outline) .wp-block-button__link:hover {
+	filter: brightness(1.15);
+	box-shadow: var(--wp--preset--shadow--soft);
+}
+
 /* Outlined style variant */
 .wp-block-button.is-style-outline .wp-block-button__link {
 	transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
+}
+
+/* Outline buttons on light backgrounds: tint fill on hover. (On the dark
+   hero/CTA bands the white-outline hover in global.css wins instead.) */
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+	background-color: var(--wp--preset--color--accent-tint);
 }

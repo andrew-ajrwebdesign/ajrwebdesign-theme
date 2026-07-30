@@ -59,7 +59,7 @@
 				{
 					"slug": "button-green",
 					"name": "Button Green",
-					"gradient": "linear-gradient(90deg, #06634C 0%, #0E7F56 100%)"
+					"gradient": "linear-gradient(135deg, var(--wp--preset--color--dark-soft) 0%, var(--wp--preset--color--primary) 100%)"
 				},
 				{
 					"slug": "hero-dark",
