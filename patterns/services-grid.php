@@ -26,9 +26,9 @@
 <div class="wp-block-group service-card-inner"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:group {"backgroundColor":"accent-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-accent-tint-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"id":358,"width":"30px","sizeSlug":"full","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2026/04/speedometer-1.png" alt="" class="wp-image-358" style="width:30px"/></figure>
-<!-- /wp:image --></div>
+<div class="wp-block-group has-accent-tint-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"className":"card-ico card-ico--gauge","layout":{"type":"default"}} -->
+<div class="wp-block-group card-ico card-ico--gauge"></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
@@ -72,9 +72,9 @@
 <div class="wp-block-group service-card-inner"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:group {"backgroundColor":"accent-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-accent-tint-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"id":372,"width":"30px","sizeSlug":"full","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2026/04/magnifying-glass.png" alt="Audit Icon" class="wp-image-372" style="width:30px"/></figure>
-<!-- /wp:image --></div>
+<div class="wp-block-group has-accent-tint-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"className":"card-ico card-ico--search","layout":{"type":"default"}} -->
+<div class="wp-block-group card-ico card-ico--search"></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
@@ -120,9 +120,9 @@
 <div class="wp-block-group service-card-inner"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:group {"backgroundColor":"accent-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-accent-tint-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"id":366,"width":"30px","sizeSlug":"full","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2026/04/code.png" alt="" class="wp-image-366" style="width:30px"/></figure>
-<!-- /wp:image --></div>
+<div class="wp-block-group has-accent-tint-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"className":"card-ico card-ico--code","layout":{"type":"default"}} -->
+<div class="wp-block-group card-ico card-ico--code"></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
@@ -166,9 +166,9 @@
 <div class="wp-block-group service-card-inner"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:group {"backgroundColor":"accent-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-accent-tint-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"id":373,"width":"30px","sizeSlug":"full","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="/wp-content/uploads/2026/04/task-actions.png" alt="" class="wp-image-373" style="width:30px"/></figure>
-<!-- /wp:image --></div>
+<div class="wp-block-group has-accent-tint-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"className":"card-ico card-ico--clipboard","layout":{"type":"default"}} -->
+<div class="wp-block-group card-ico card-ico--clipboard"></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->

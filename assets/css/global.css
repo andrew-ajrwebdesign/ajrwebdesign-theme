@@ -171,6 +171,25 @@ footer.wp-block-template-part,
 	background-color: var(--wp--preset--color--bg);
 }
 
+/* Service card icons — alpha-mask SVGs painted with the primary token,
+   same system as the nav dropdown (nav-ico). PNG icons retired. */
+.wp-block-group.card-ico {
+	width: 28px;
+	height: 28px;
+	background-color: var(--wp--preset--color--primary);
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+}
+
+.card-ico--gauge { -webkit-mask-image: url("../img/icons/gauge.svg"); mask-image: url("../img/icons/gauge.svg"); }
+.card-ico--search { -webkit-mask-image: url("../img/icons/search.svg"); mask-image: url("../img/icons/search.svg"); }
+.card-ico--code { -webkit-mask-image: url("../img/icons/code.svg"); mask-image: url("../img/icons/code.svg"); }
+.card-ico--clipboard { -webkit-mask-image: url("../img/icons/clipboard.svg"); mask-image: url("../img/icons/clipboard.svg"); }
+
 .hero-section.has-background h1 {
 	color: var(--wp--preset--color--bg);
 }
