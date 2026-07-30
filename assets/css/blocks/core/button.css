@@ -9,6 +9,24 @@
 	transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease, filter 150ms ease, box-shadow 150ms ease;
 }
 
+/* Universal button size — every Button block gets identical type and
+   padding regardless of per-instance attributes (the header nav CTA is
+   a nav item, untouched). Filled buttons carry a transparent 2px border
+   so they render the same height as the 2px outline variants. Widths
+   stay layout-driven. */
+.wp-block-button__link {
+	border-width: 2px;
+	border-style: solid;
+	font-size: var(--wp--preset--font-size--base, 16px) !important;
+	font-weight: 500 !important;
+	line-height: 1.2 !important;
+	padding: 0.85rem 2rem !important;
+}
+
+.wp-block-button:not(.is-style-outline) .wp-block-button__link {
+	border-color: transparent;
+}
+
 .wp-block-button__link:focus-visible {
 	outline: 2px solid var(--wp--preset--color--primary);
 	outline-offset: 3px;
