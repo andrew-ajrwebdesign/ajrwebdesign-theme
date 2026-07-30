@@ -185,6 +185,22 @@ footer.wp-block-template-part,
 	mask-size: contain;
 }
 
+/* Dark footer wordmark — text logo, green "ajr" + white "webdesign"
+   (the image logo is dark-on-light; the footer band is dark). */
+.footer-wordmark {
+	color: var(--wp--preset--color--bg);
+	font-size: 26px;
+	font-weight: 500;
+	letter-spacing: 0.2px;
+	line-height: 1;
+	margin-bottom: 12px;
+}
+
+.footer-wordmark strong {
+	color: var(--wp--preset--color--accent-light);
+	font-weight: 700;
+}
+
 .card-ico--gauge { -webkit-mask-image: url("../img/icons/gauge.svg"); mask-image: url("../img/icons/gauge.svg"); }
 .card-ico--search { -webkit-mask-image: url("../img/icons/search.svg"); mask-image: url("../img/icons/search.svg"); }
 .card-ico--code { -webkit-mask-image: url("../img/icons/code.svg"); mask-image: url("../img/icons/code.svg"); }
