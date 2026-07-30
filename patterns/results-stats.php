@@ -8,8 +8,8 @@
  * @package AJRWebDesign_Theme
  */
 ?>
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|50","padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained","contentSize":"700px"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:paragraph {"className":"has-accent-dark-color has-text-color has-link-color","style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"500","letterSpacing":"1px","textAlign":"center"},"elements":{"link":{"color":{"text":"var:preset|color|accent-dark"}}}},"textColor":"accent-dark","fontSize":"base"} -->
+<!-- wp:group {"tagName":"section","align":"full","style":{"spacing":{"blockGap":"var:preset|spacing|50","padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained","contentSize":"700px"}} -->
+<section class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)"><!-- wp:paragraph {"className":"has-accent-dark-color has-text-color has-link-color","style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"500","letterSpacing":"1px","textAlign":"center"},"elements":{"link":{"color":{"text":"var:preset|color|accent-dark"}}}},"textColor":"accent-dark","fontSize":"base"} -->
 <p class="has-text-align-center has-accent-dark-color has-text-color has-link-color has-base-font-size" style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase"><?php esc_html_e( 'PROVEN RESULTS', 'ajrwebdesign-theme' ); ?></p>
 <!-- /wp:paragraph -->
 
@@ -19,7 +19,7 @@
 
 <!-- wp:paragraph {"className":"has-muted-color has-text-color has-link-color","style":{"elements":{"link":{"color":{"text":"var:preset|color|muted"}}},"typography":{"lineHeight":"1.7","textAlign":"center"}},"textColor":"muted"} -->
 <p class="has-text-align-center has-muted-color has-text-color has-link-color" style="line-height:1.7">I don’t just make vague recommendations. My work focuses on practical WordPress improvements that can be measured across speed, Core Web Vitals, SEO health, and overall site performance.</p>
-<!-- /wp:paragraph --></div>
+<!-- /wp:paragraph --></section>
 <!-- /wp:group -->
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->

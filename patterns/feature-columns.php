@@ -8,8 +8,8 @@
  * @package AJRWebDesign_Theme
  */
 ?>
-<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}},"shadow":"none"},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50);padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);box-shadow:none"><!-- wp:columns {"verticalAlignment":"top","className":"reverse","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
+<!-- wp:group {"tagName":"section","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"},"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}},"shadow":"none"},"layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignfull" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50);padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);box-shadow:none"><!-- wp:columns {"verticalAlignment":"top","className":"reverse","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|60"}}}} -->
 <div class="wp-block-columns are-vertically-aligned-top reverse"><!-- wp:column {"verticalAlignment":"top","width":"50%","style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} -->
 <div class="wp-block-column is-vertically-aligned-top" style="flex-basis:50%"><!-- wp:group {"tagName":"section","metadata":{"name":"Services"},"align":"full","className":"services-section","style":{"spacing":{"padding":{"left":"0","right":"0"}}},"backgroundColor":"bg","layout":{"type":"constrained"}} -->
 <section class="wp-block-group alignfull services-section has-bg-background-color has-background" style="padding-right:0;padding-left:0"><!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
@@ -169,5 +169,5 @@
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns --></div>
+<!-- /wp:columns --></section>
 <!-- /wp:group -->
