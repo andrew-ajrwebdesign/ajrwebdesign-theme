@@ -3,7 +3,7 @@
  * Title: Process Steps
  * Slug: ajrwebdesign/process-steps
  * Categories: text
- * Description: How-it-works section with image column and numbered accordion process steps.
+ * Description: How-it-works section with image column and numbered icon process rows (feature-rows divider style).
  *
  * @package AJRWebDesign_Theme
  */
@@ -27,101 +27,84 @@
 <div class="wp-block-columns are-vertically-aligned-top reverse"><!-- wp:column {"verticalAlignment":"top","width":"50%","style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} -->
 <div class="wp-block-column is-vertically-aligned-top" style="flex-basis:50%"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":1483,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="/wp-content/uploads/2026/05/maintenance-steps-lg-1024x683.webp" alt="" class="wp-image-1483"/></figure>
+<figure class="wp-block-image size-large"><img src="https://ajrwebdesign-folio.ddev.site/wp-content/uploads/2026/05/maintenance-steps-lg-1024x683.webp" alt="" class="wp-image-1483"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"top","width":"50%","style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} -->
-<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:50%"><!-- wp:accordion {"autoclose":true} -->
-<div role="group" class="wp-block-accordion"><!-- wp:accordion-item {"openByDefault":true} -->
-<div class="wp-block-accordion-item is-open"><!-- wp:accordion-heading {"fontSize":"lg"} -->
-<h3 class="wp-block-accordion-heading has-lg-font-size"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title"><?php esc_html_e( '1. Choose a plan', 'ajrwebdesign-theme' ); ?></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
-<!-- /wp:accordion-heading -->
-
-<!-- wp:accordion-panel -->
-<div role="region" class="wp-block-accordion-panel has-bg-background-color has-background" style="padding-top:0;padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","orientation":"horizontal"}} -->
-<div class="wp-block-group"><!-- wp:group {"backgroundColor":"accent-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-accent-tint-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"className":"card-ico card-ico--clipboard","layout":{"type":"default"}} -->
+<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:50%"><!-- wp:group {"className":"feature-rows","layout":{"type":"constrained"}} -->
+<div class="wp-block-group feature-rows"><!-- wp:columns {"verticalAlignment":"center"} -->
+<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"10%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:10%"><!-- wp:group {"backgroundColor":"accent-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-accent-tint-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"className":"card-ico card-icou002du002dclipboard","layout":{"type":"default"}} -->
 <div class="wp-block-group card-ico card-ico--clipboard"></div>
 <!-- /wp:group --></div>
-<!-- /wp:group -->
+<!-- /wp:group --></div><!-- /wp:column -->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","contentSize":""}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|dark"}}}},"textColor":"dark","fontSize":"base"} -->
-<p class="has-dark-color has-text-color has-link-color has-base-font-size">Select the level of support that fits your website.</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
-<!-- /wp:accordion-panel --></div>
-<!-- /wp:accordion-item -->
+<!-- wp:column {"verticalAlignment":"center","width":"90%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:90%"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","contentSize":""}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"align":"left","style":{"typography":{"fontStyle":"normal","fontWeight":"500"},"elements":{"link":{"color":{"text":"var:preset|color|dark"}}}},"textColor":"dark","fontSize":"sm"} -->
+<p class="has-text-align-left has-dark-color has-text-color has-link-color has-sm-font-size" style="font-style:normal;font-weight:500"><strong><?php esc_html_e( '1. Choose a plan', 'ajrwebdesign-theme' ); ?></strong></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:accordion-item -->
-<div class="wp-block-accordion-item"><!-- wp:accordion-heading {"fontSize":"lg"} -->
-<h3 class="wp-block-accordion-heading has-lg-font-size"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title"><?php esc_html_e( '2. Website onboarding', 'ajrwebdesign-theme' ); ?></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
-<!-- /wp:accordion-heading -->
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"},"elements":{"link":{"color":{"text":"var:preset|color|dark"}}}},"textColor":"dark"} -->
+<p class="has-dark-color has-text-color has-link-color" style="font-size:14px">Select the level of support that fits your website.</p>
+<!-- /wp:paragraph --></div><!-- /wp:group --></div><!-- /wp:column --></div><!-- /wp:columns -->
 
-<!-- wp:accordion-panel -->
-<div role="region" class="wp-block-accordion-panel has-bg-background-color has-background" style="padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","orientation":"horizontal"}} -->
-<div class="wp-block-group"><!-- wp:group {"backgroundColor":"accent-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-accent-tint-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"className":"card-ico card-ico--cog","layout":{"type":"default"}} -->
+<!-- wp:columns {"verticalAlignment":"center"} -->
+<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"10%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:10%"><!-- wp:group {"backgroundColor":"accent-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-accent-tint-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"className":"card-ico card-icou002du002dcog","layout":{"type":"default"}} -->
 <div class="wp-block-group card-ico card-ico--cog"></div>
 <!-- /wp:group --></div>
-<!-- /wp:group -->
+<!-- /wp:group --></div><!-- /wp:column -->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","contentSize":""}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|dark"}}}},"textColor":"dark"} -->
-<p class="has-dark-color has-text-color has-link-color">Your website is reviewed and prepared for ongoing maintenance.</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
-<!-- /wp:accordion-panel --></div>
-<!-- /wp:accordion-item -->
+<!-- wp:column {"verticalAlignment":"center","width":"90%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:90%"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","contentSize":""}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"align":"left","style":{"typography":{"fontStyle":"normal","fontWeight":"500"},"elements":{"link":{"color":{"text":"var:preset|color|dark"}}}},"textColor":"dark","fontSize":"sm"} -->
+<p class="has-text-align-left has-dark-color has-text-color has-link-color has-sm-font-size" style="font-style:normal;font-weight:500"><strong><?php esc_html_e( '2. Website onboarding', 'ajrwebdesign-theme' ); ?></strong></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:accordion-item -->
-<div class="wp-block-accordion-item"><!-- wp:accordion-heading {"fontSize":"lg"} -->
-<h3 class="wp-block-accordion-heading has-lg-font-size"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title"><?php esc_html_e( '3. Ongoing monitoring', 'ajrwebdesign-theme' ); ?></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
-<!-- /wp:accordion-heading -->
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"},"elements":{"link":{"color":{"text":"var:preset|color|dark"}}}},"textColor":"dark"} -->
+<p class="has-dark-color has-text-color has-link-color" style="font-size:14px">Your website is reviewed and prepared for ongoing maintenance.</p>
+<!-- /wp:paragraph --></div><!-- /wp:group --></div><!-- /wp:column --></div><!-- /wp:columns -->
 
-<!-- wp:accordion-panel -->
-<div role="region" class="wp-block-accordion-panel has-bg-background-color has-background" style="padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","orientation":"horizontal"}} -->
-<div class="wp-block-group"><!-- wp:group {"backgroundColor":"accent-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-accent-tint-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"className":"card-ico card-ico--search","layout":{"type":"default"}} -->
+<!-- wp:columns {"verticalAlignment":"center"} -->
+<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"10%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:10%"><!-- wp:group {"backgroundColor":"accent-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-accent-tint-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"className":"card-ico card-icou002du002dsearch","layout":{"type":"default"}} -->
 <div class="wp-block-group card-ico card-ico--search"></div>
 <!-- /wp:group --></div>
-<!-- /wp:group -->
+<!-- /wp:group --></div><!-- /wp:column -->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","contentSize":""}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|dark"}}}},"textColor":"dark"} -->
-<p class="has-dark-color has-text-color has-link-color">Updates, backups, security checks, and monitoring are handled proactively.</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
-<!-- /wp:accordion-panel --></div>
-<!-- /wp:accordion-item -->
+<!-- wp:column {"verticalAlignment":"center","width":"90%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:90%"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","contentSize":""}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"align":"left","style":{"typography":{"fontStyle":"normal","fontWeight":"500"},"elements":{"link":{"color":{"text":"var:preset|color|dark"}}}},"textColor":"dark","fontSize":"sm"} -->
+<p class="has-text-align-left has-dark-color has-text-color has-link-color has-sm-font-size" style="font-style:normal;font-weight:500"><strong><?php esc_html_e( '3. Ongoing monitoring', 'ajrwebdesign-theme' ); ?></strong></p>
+<!-- /wp:paragraph -->
 
-<!-- wp:accordion-item -->
-<div class="wp-block-accordion-item"><!-- wp:accordion-heading {"fontSize":"lg"} -->
-<h3 class="wp-block-accordion-heading has-lg-font-size"><button type="button" class="wp-block-accordion-heading__toggle"><span class="wp-block-accordion-heading__toggle-title"><?php esc_html_e( '4. Support when needed', 'ajrwebdesign-theme' ); ?></span><span class="wp-block-accordion-heading__toggle-icon" aria-hidden="true">+</span></button></h3>
-<!-- /wp:accordion-heading -->
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"},"elements":{"link":{"color":{"text":"var:preset|color|dark"}}}},"textColor":"dark"} -->
+<p class="has-dark-color has-text-color has-link-color" style="font-size:14px">Updates, backups, security checks, and monitoring are handled proactively.</p>
+<!-- /wp:paragraph --></div><!-- /wp:group --></div><!-- /wp:column --></div><!-- /wp:columns -->
 
-<!-- wp:accordion-panel -->
-<div role="region" class="wp-block-accordion-panel has-bg-background-color has-background" style="padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","orientation":"horizontal"}} -->
-<div class="wp-block-group"><!-- wp:group {"backgroundColor":"accent-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-accent-tint-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"className":"card-ico card-ico--messages","layout":{"type":"default"}} -->
+<!-- wp:columns {"verticalAlignment":"center"} -->
+<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"10%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:10%"><!-- wp:group {"backgroundColor":"accent-tint","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-accent-tint-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:group {"className":"card-ico card-icou002du002dmessages","layout":{"type":"default"}} -->
 <div class="wp-block-group card-ico card-ico--messages"></div>
 <!-- /wp:group --></div>
-<!-- /wp:group -->
+<!-- /wp:group --></div><!-- /wp:column -->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","contentSize":""}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|dark"}}}},"textColor":"dark"} -->
-<p class="has-dark-color has-text-color has-link-color">Get practical help for ongoing issues, updates, and small website changes.</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div>
-<!-- /wp:accordion-panel --></div>
-<!-- /wp:accordion-item --></div>
-<!-- /wp:accordion --></div>
+<!-- wp:column {"verticalAlignment":"center","width":"90%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:90%"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained","contentSize":""}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"align":"left","style":{"typography":{"fontStyle":"normal","fontWeight":"500"},"elements":{"link":{"color":{"text":"var:preset|color|dark"}}}},"textColor":"dark","fontSize":"sm"} -->
+<p class="has-text-align-left has-dark-color has-text-color has-link-color has-sm-font-size" style="font-style:normal;font-weight:500"><strong><?php esc_html_e( '4. Support when needed', 'ajrwebdesign-theme' ); ?></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"14px"},"elements":{"link":{"color":{"text":"var:preset|color|dark"}}}},"textColor":"dark"} -->
+<p class="has-dark-color has-text-color has-link-color" style="font-size:14px">Get practical help for ongoing issues, updates, and small website changes.</p>
+<!-- /wp:paragraph --></div><!-- /wp:group --></div><!-- /wp:column --></div><!-- /wp:columns --></div><!-- /wp:group --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></section>
 <!-- /wp:group -->
