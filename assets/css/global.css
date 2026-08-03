@@ -297,6 +297,23 @@ footer.wp-block-template-part,
 	height: 24px;
 }
 
+/* Feature rows — the option-3 minimal layout for icon+text row lists on the
+   service pages: no card chrome, hairline divider between rows. The container
+   group carries .feature-rows; rows are plain core/columns. */
+.feature-rows > .wp-block-columns {
+	padding-block: var(--wp--preset--spacing--30);
+}
+
+.feature-rows > .wp-block-columns + .wp-block-columns {
+	border-top: 1px solid var(--wp--preset--color--border);
+}
+
+/* Icon squares shrink-wrap their glyph — without this the tint group
+   stretches into a full-width bar once the columns stack on mobile. */
+.feature-rows .wp-block-column > .wp-block-group.has-accent-tint-background-color {
+	width: fit-content;
+}
+
 /* Mobile: the live design compresses the two largest spacing presets,
    removes hero top padding, and allows column stacks to reverse. */
 @media (max-width: 781px) {
