@@ -279,7 +279,71 @@
 	border-top: 0;
 }
 
+/* Deterministic overlay flow: explicit column, no core gap, items in
+   normal flow with auto height — the row rhythm comes from padding only. */
+.site-header .is-menu-open .wp-block-navigation__container {
+	display: flex !important;
+	flex-direction: column !important;
+	align-items: stretch !important;
+	gap: 0 !important;
+}
+
+.site-header .is-menu-open .wp-block-navigation__container > .wp-block-navigation-item {
+	position: static !important;
+	display: block !important;
+	width: 100% !important;
+	height: auto !important;
+	flex: 0 0 auto !important;
+	margin: 0 !important;
+}
+
+.site-header .is-menu-open .wp-block-navigation__container > .wp-block-navigation-item > .wp-block-navigation-item__content {
+	display: block;
+	width: 100%;
+	padding-block: 16px;
+}
+
+.site-header .is-menu-open .has-child .wp-block-navigation__submenu-container {
+	padding-bottom: 12px !important;
+}
+
 .site-header .is-menu-open .wp-block-navigation__container > .wp-block-navigation-item.menu-button {
-	border-top: 0;
-	margin-top: 24px;
+	border-top: 0 !important;
+	margin-top: 20px !important;
+}
+
+.site-header .is-menu-open .menu-button .wp-block-navigation-item__content,
+.site-header .is-menu-open a.menu-button {
+	display: inline-flex !important;
+	width: 100% !important;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+/* Left-align the overlay content column and let it fill the panel —
+   core centers it via the justification custom property. */
+.site-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+	align-items: flex-start !important;
+	justify-content: flex-start !important;
+	width: 100%;
+}
+
+.site-header .is-menu-open .wp-block-navigation__container {
+	width: 100% !important;
+}
+
+/* CTA label stays white on the gradient in the overlay too. */
+.site-header .is-menu-open .menu-button .wp-block-navigation-item__content,
+.site-header .is-menu-open a.menu-button,
+.site-header .is-menu-open .menu-button .wp-block-navigation-item__label {
+	color: var(--wp--preset--color--bg) !important;
+}
+
+/* Language switcher joins the open overlay, beside the close button. */
+.site-header:has(.wp-block-navigation__responsive-container.is-menu-open) .ajr-lang-switch {
+	position: fixed;
+	top: 24px;
+	right: 84px;
+	z-index: 100001;
 }
