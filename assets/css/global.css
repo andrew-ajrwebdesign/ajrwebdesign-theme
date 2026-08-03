@@ -434,6 +434,14 @@ footer.wp-block-template-part,
 		padding-top: var(--wp--preset--spacing--50) !important;
 	}
 
+	/* The CTA band carries spacing-60 side padding for desktop breathing
+	   room — on phones it just narrows the column. Content keeps the
+	   global padding of its inner constrained groups. */
+	.wp-block-group.cta-section {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
 	.wp-block-columns.reverse {
 		flex-direction: column-reverse !important;
 	}

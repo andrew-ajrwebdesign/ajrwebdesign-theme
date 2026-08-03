@@ -198,7 +198,7 @@
 	border: 0 !important;
 	border-radius: 0 !important;
 	box-shadow: none !important;
-	padding: 0 0 0 1.25rem !important;
+	padding: 0 !important;
 }
 
 .site-header .is-menu-open .nav-ico > .wp-block-navigation-item__content {
@@ -251,7 +251,7 @@
 	display: block;
 	width: 150px;
 	height: 36px;
-	margin-bottom: 28px;
+	margin-bottom: 12px;
 	background: url("../../../img/logo.svg") left center / contain no-repeat;
 }
 
@@ -382,4 +382,13 @@ html:has(.wp-block-navigation__responsive-container.is-menu-open) {
 /* Slightly smaller overlay logo so the top row never collides on 360px. */
 .site-header .is-menu-open .wp-block-navigation__responsive-dialog::before {
 	width: 128px;
+}
+
+
+/* Overlay focus: soft row highlight instead of the outlined box (core moves
+   focus to the first item on open, which fires the harsh focus ring). */
+.site-header .is-menu-open .wp-block-navigation-item__content:focus-visible {
+	outline: none;
+	background-color: var(--wp--preset--color--surface);
+	border-radius: 8px;
 }
