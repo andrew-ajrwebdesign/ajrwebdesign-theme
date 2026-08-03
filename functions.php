@@ -136,6 +136,7 @@ add_action(
 			'core/search'            => 'core/search',
 			'core/comments'          => 'core/comments',
 			'core/list'              => 'core/list',
+			'core/accordion-item'  => 'core/accordion',
 			'core/group'             => 'core/group',
 			'wpforms/form-selector'  => 'wpforms',
 		);

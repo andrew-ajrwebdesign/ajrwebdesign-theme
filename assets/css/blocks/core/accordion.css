@@ -1,0 +1,47 @@
+/* core/accordion — divider-style accordion, site-wide: no cards, hairline
+   separators, tint plus-circle markers. Card attributes were stripped from
+   content in the round-14 migration; these rules define the entire look. */
+.wp-block-accordion .wp-block-accordion-item {
+	margin-block: 0;
+}
+
+.wp-block-accordion-item + .wp-block-accordion-item {
+	border-top: 1px solid var(--wp--preset--color--border);
+}
+
+.wp-block-accordion-heading__toggle {
+	align-items: center;
+	gap: var(--wp--preset--spacing--40);
+	padding-block: var(--wp--preset--spacing--50);
+}
+
+.wp-block-accordion-heading__toggle-icon {
+	display: inline-flex;
+	flex: 0 0 28px;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	height: 28px;
+	background-color: var(--wp--preset--color--accent-tint);
+	border-radius: 50%;
+	color: var(--wp--preset--color--accent-dark);
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1;
+}
+
+.wp-block-accordion-heading__toggle[aria-expanded="true"] .wp-block-accordion-heading__toggle-icon {
+	background-color: var(--wp--preset--color--accent-dark);
+	color: var(--wp--preset--color--bg);
+}
+
+.wp-block-accordion-panel {
+	padding-block-end: var(--wp--preset--spacing--50);
+	color: var(--wp--preset--color--muted);
+}
+
+/* Option-C FAQ split: the intro column stays with you beside a long list. */
+.faq-section .wp-block-column:first-child > .wp-block-group {
+	position: sticky;
+	top: calc(var(--wp--custom--header--offset, 85px) + var(--wp--preset--spacing--40));
+}
