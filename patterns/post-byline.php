@@ -20,7 +20,7 @@ $ajrwebdesign_theme_avatar_url = wp_get_attachment_image_url( $ajrwebdesign_them
 <!-- wp:group {"className":"has-link-color","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"textColor":"muted","layout":{"type":"flex","flexWrap":"wrap"}} -->
 <div class="wp-block-group has-link-color has-muted-color has-text-color"><?php if ( $ajrwebdesign_theme_avatar_url ) : ?><!-- wp:group {"layout":{"type":"constrained","contentSize":"50px"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":<?php echo (int) $ajrwebdesign_theme_avatar_id; ?>,"scale":"cover","sizeSlug":"thumbnail","linkDestination":"none","className":"is-style-rounded"} -->
-<figure class="wp-block-image size-thumbnail is-style-rounded"><img src="<?php echo esc_url( $ajrwebdesign_theme_avatar_url ); ?>" alt="" class="wp-image-<?php echo (int) $ajrwebdesign_theme_avatar_id; ?>" style="object-fit:cover"/></figure>
+<figure class="wp-block-image size-thumbnail is-style-rounded"><img src="<?php echo esc_url( $ajrwebdesign_theme_avatar_url ); ?>" alt="<?php echo esc_attr( get_post_meta( $ajrwebdesign_theme_avatar_id, '_wp_attachment_image_alt', true ) ); ?>" class="wp-image-<?php echo (int) $ajrwebdesign_theme_avatar_id; ?>" style="object-fit:cover"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
 <?php endif; ?>
