@@ -158,6 +158,25 @@ add_action(
 );
 
 /**
+ * Preload the two self-hosted variable fonts. Text (and the Complianz
+ * banner) renders in the final faces on first paint — without this the
+ * font swap reflows the banner and costs CLS on mobile.
+ */
+add_action(
+	'wp_head',
+	function () {
+		foreach ( array( 'Lora-wght.woff2', 'NotoSans-wght.woff2' ) as $font ) {
+			printf(
+				'<link rel="preload" href="%s" as="font" type="font/woff2" crossorigin>' . "
+",
+				esc_url( get_theme_file_uri( 'assets/fonts/' . $font ) )
+			);
+		}
+	},
+	2
+);
+
+/**
  * Enqueue the global stylesheet.
  *
  * global.css covers only what theme.json cannot: the fixed header, resets,
