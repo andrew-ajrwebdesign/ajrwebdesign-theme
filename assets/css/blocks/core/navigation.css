@@ -256,8 +256,13 @@
 }
 
 .site-header .wp-block-navigation__responsive-container-close {
-	top: 24px !important;
-	right: 24px !important;
+	position: absolute !important;
+	top: 20px !important;
+	right: 20px !important;
+	width: 44px;
+	height: 44px;
+	display: grid;
+	place-items: center;
 }
 
 .site-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
@@ -321,6 +326,21 @@
 	text-align: center;
 }
 
+/* The overlay is always a full-screen panel — core only guarantees the
+   fixed full-viewport geometry below its own 600px breakpoint, so the
+   840px extension needs it stated explicitly. */
+.site-header .wp-block-navigation__responsive-container.is-menu-open {
+	position: fixed !important;
+	inset: 0 !important;
+	width: 100vw !important;
+	height: 100dvh !important;
+}
+
+/* Lock the page behind the open menu. */
+html:has(.wp-block-navigation__responsive-container.is-menu-open) {
+	overflow: hidden;
+}
+
 /* Left-align the overlay content column and let it fill the panel —
    core centers it via the justification custom property. */
 .site-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
@@ -340,10 +360,22 @@
 	color: var(--wp--preset--color--bg) !important;
 }
 
+.site-header .is-menu-open .menu-button .wp-block-navigation-item__content,
+.site-header .is-menu-open a.menu-button {
+	background: var(--wp--preset--gradient--button-green) !important;
+	border-radius: var(--wp--custom--radius--md);
+	padding: 0.9rem 1.5rem !important;
+}
+
 /* Language switcher joins the open overlay, beside the close button. */
 .site-header:has(.wp-block-navigation__responsive-container.is-menu-open) .ajr-lang-switch {
 	position: fixed;
-	top: 24px;
-	right: 84px;
+	top: 26px;
+	right: 76px;
 	z-index: 100001;
+}
+
+/* Slightly smaller overlay logo so the top row never collides on 360px. */
+.site-header .is-menu-open .wp-block-navigation__responsive-dialog::before {
+	width: 128px;
 }

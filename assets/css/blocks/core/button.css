@@ -49,3 +49,12 @@
 .wp-block-button.is-style-outline .wp-block-button__link:hover {
 	background-color: var(--wp--preset--color--accent-tint);
 }
+
+/* Mobile: content buttons go full width — the editor width presets (50%
+   etc.) squeeze into multi-line pills on phones. Header/nav CTA excluded. */
+@media (max-width: 781px) {
+	main .wp-block-buttons .wp-block-button,
+	main .wp-block-buttons .wp-block-button__link {
+		width: 100% !important;
+	}
+}

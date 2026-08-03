@@ -27,3 +27,10 @@
 	filter: brightness(1.08);
 	transform: translateY(-1px);
 }
+
+/* Mobile: the submit matches the full-width button convention. */
+@media (max-width: 781px) {
+	.wpforms-container .wpforms-submit {
+		width: 100%;
+	}
+}
