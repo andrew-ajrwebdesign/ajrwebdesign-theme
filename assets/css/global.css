@@ -405,11 +405,33 @@ footer.wp-block-template-part,
 	}
 }
 
+/* Header squeeze zone: between the 840px mobile breakpoint and ~1140px the
+   full nav must fit one row — tighter gaps, smaller CTA, narrower logo. */
+@media (min-width: 840px) and (max-width: 1140px) {
+	.site-header .wp-block-navigation {
+		gap: 14px !important;
+	}
+
+	.site-header .wp-block-navigation .wp-block-navigation-item__content {
+		font-size: 15px;
+	}
+
+	.site-header .is-responsive.items-justified-right .menu-button,
+	.site-header .menu-button {
+		padding: 0.6rem 0.9rem !important;
+	}
+
+	.site-header .site-logo img {
+		width: 116px !important;
+		height: auto !important;
+	}
+}
+
 /* Mobile: the live design compresses the two largest spacing presets,
    removes hero top padding, and allows column stacks to reverse. */
 @media (max-width: 781px) {
 	.wp-block-group.hero-section {
-		padding-top: 0 !important;
+		padding-top: var(--wp--preset--spacing--50) !important;
 	}
 
 	.wp-block-columns.reverse {

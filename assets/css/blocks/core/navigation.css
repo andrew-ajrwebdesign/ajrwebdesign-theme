@@ -217,3 +217,69 @@
 .site-header .is-menu-open .wp-block-navigation-item {
 	width: 100%;
 }
+
+/* ---------------------------------------------------------------------------
+ * Mobile breakpoint 840px — core switches to the hamburger at 600px; the
+ * header needs the overlay up to 839px (round 22).
+ * ------------------------------------------------------------------------- */
+@media (min-width: 600px) and (max-width: 839px) {
+	.site-header .wp-block-navigation__responsive-container:not(.is-menu-open) {
+		display: none !important;
+	}
+
+	.site-header .wp-block-navigation__responsive-container-open:not(.always-shown) {
+		display: flex !important;
+	}
+}
+
+/* ---------------------------------------------------------------------------
+ * Mobile overlay redesign — white panel, wordmark logo top-left, roomy
+ * top-level rows with hairline dividers, full-width CTA.
+ * ------------------------------------------------------------------------- */
+.site-header .wp-block-navigation__responsive-container.is-menu-open {
+	padding: 24px 28px 40px;
+}
+
+.site-header .is-menu-open .wp-block-navigation__responsive-dialog {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.site-header .is-menu-open .wp-block-navigation__responsive-dialog::before {
+	content: "";
+	display: block;
+	width: 150px;
+	height: 36px;
+	margin-bottom: 28px;
+	background: url("../../../img/logo.svg") left center / contain no-repeat;
+}
+
+.site-header .wp-block-navigation__responsive-container-close {
+	top: 24px !important;
+	right: 24px !important;
+}
+
+.site-header .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+	padding-top: 0 !important;
+}
+
+.site-header .is-menu-open .wp-block-navigation__container > .wp-block-navigation-item > .wp-block-navigation-item__content {
+	font-size: 1.05rem;
+	font-weight: 600;
+	color: var(--wp--preset--color--ink);
+	padding-block: 14px;
+}
+
+.site-header .is-menu-open .wp-block-navigation__container > .wp-block-navigation-item {
+	border-top: 1px solid var(--wp--preset--color--border);
+}
+
+.site-header .is-menu-open .wp-block-navigation__container > .wp-block-navigation-item:first-child {
+	border-top: 0;
+}
+
+.site-header .is-menu-open .wp-block-navigation__container > .wp-block-navigation-item.menu-button {
+	border-top: 0;
+	margin-top: 24px;
+}
