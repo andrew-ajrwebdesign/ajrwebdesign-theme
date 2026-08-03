@@ -11,7 +11,19 @@
 	--wpforms-labelSublabelColor: var(--wp--preset--color--muted);
 }
 
+/* The form's stored style settings out-specificity the vars above, so the
+   submit button is pinned to the site button language directly. */
+.wpforms-container .wpforms-submit {
+	background: linear-gradient(135deg, var(--wp--preset--color--dark-soft), var(--wp--preset--color--primary)) !important;
+	border: none !important;
+	color: var(--wp--preset--color--bg) !important;
+	border-radius: 40px !important;
+	padding: 0.85rem 2rem !important;
+	font-size: var(--wp--preset--font-size--base, 1rem) !important;
+	font-weight: 500 !important;
+}
+
 .wpforms-container .wpforms-submit:hover {
-	background-color: var(--wp--preset--color--accent-dark) !important;
-	border-color: var(--wp--preset--color--accent-dark) !important;
+	filter: brightness(1.08);
+	transform: translateY(-1px);
 }
