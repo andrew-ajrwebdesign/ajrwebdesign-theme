@@ -314,6 +314,97 @@ footer.wp-block-template-part,
 	width: fit-content;
 }
 
+/* Pricing cards (round 16) — option-1 plan cards on the maintenance pages.
+   Cards are real blocks; these rules add the composition: equal heights,
+   serif price, featured lift, pill. */
+.pricing-cards .wp-block-column {
+	display: flex;
+}
+
+.pricing-card {
+	position: relative;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Flex items shrink-wrap; force card children full width (except the pill). */
+.pricing-card > :not(.pricing-card__pill) {
+	width: 100%;
+}
+
+.pricing-card__name {
+	font-weight: 600;
+	font-size: 1.05rem;
+}
+
+.pricing-card__price {
+	font-family: var(--wp--preset--font-family--lora, Lora, serif);
+	font-size: 46px;
+	line-height: 1.1;
+	color: var(--wp--preset--color--accent-dark);
+}
+
+.pricing-card__price small {
+	font-family: var(--wp--preset--font-family--noto-sans, "Noto Sans", sans-serif);
+	font-size: 15px;
+	font-weight: 400;
+	color: var(--wp--preset--color--muted);
+	margin-inline-start: 4px;
+}
+
+.pricing-card__desc {
+	color: var(--wp--preset--color--muted);
+	font-size: 14px;
+}
+
+.pricing-card ul.pricing-card__feats {
+	border-top: 1px solid var(--wp--preset--color--border);
+	padding-top: var(--wp--preset--spacing--50);
+	flex: 1;
+}
+
+.pricing-card ul.pricing-card__feats li {
+	font-size: 14.5px;
+	margin-bottom: 10px;
+}
+
+.pricing-card .wp-block-buttons,
+.pricing-card .wp-block-button {
+	width: 100%;
+}
+
+.pricing-card--featured {
+	border: 2px solid var(--wp--preset--color--accent-dark);
+	transform: translateY(-10px);
+}
+
+.pricing-card__pill {
+	position: absolute;
+	top: -14px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: var(--wp--preset--color--accent-dark);
+	color: var(--wp--preset--color--bg);
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	padding: 4px 14px;
+	border-radius: 20px;
+	white-space: nowrap;
+}
+
+@media (max-width: 781px) {
+	.pricing-card--featured {
+		transform: none;
+	}
+
+	.pricing-cards .wp-block-column {
+		margin-bottom: var(--wp--preset--spacing--40);
+	}
+}
+
 /* Mobile: the live design compresses the two largest spacing presets,
    removes hero top padding, and allows column stacks to reverse. */
 @media (max-width: 781px) {
