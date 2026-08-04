@@ -156,6 +156,16 @@ main.entry-content {
 	margin-block-start: 0;
 }
 
+/* Bands own their spacing. Core's constrained-layout flow rule
+   (:root :where(.is-layout-constrained) > * { margin-block-start: 1.2rem })
+   otherwise leaks a stray gap above any section without an explicit margin.
+   Scoped to top-level <section> children so paragraph flow inside posts
+   keeps normal spacing; a band's own inline margin still wins. */
+main.entry-content > section,
+main.wp-block-group > section {
+	margin-block-start: 0;
+}
+
 /* The full-bleed dark CTA is the last block before the footer on most
    pages — close the root blockGap so the bands meet cleanly. */
 footer.wp-block-template-part,
