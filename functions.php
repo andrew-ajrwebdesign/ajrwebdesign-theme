@@ -195,3 +195,17 @@ add_action(
 		);
 	}
 );
+
+/**
+ * Give the header logo explicit dimensions — the only image core outputs
+ * without them. 140×24 is the SVG's intrinsic size; CSS still controls the
+ * rendered size, the attributes just reserve the box before paint.
+ */
+add_filter(
+	'get_custom_logo_image_attributes',
+	function ( array $attrs ): array {
+		$attrs['width']  = 140;
+		$attrs['height'] = 24;
+		return $attrs;
+	}
+);
