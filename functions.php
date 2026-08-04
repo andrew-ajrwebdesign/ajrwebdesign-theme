@@ -209,3 +209,16 @@ add_filter(
 		return $attrs;
 	}
 );
+
+/**
+ * Every hero is the ajrwebdesign-core responsive-image block, which sets
+ * its own loading=eager + fetchpriority=high — so core's default of
+ * exempting the first THREE content images from lazy-loading only leaves
+ * below-fold dashboard boards eager. One exempt slot is enough.
+ */
+add_filter(
+	'wp_omit_loading_attr_threshold',
+	function (): int {
+		return 1;
+	}
+);
