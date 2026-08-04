@@ -287,8 +287,8 @@ p.has-accent-dark-color.has-sm-font-size {
 }
 
 /* ---------------------------------------------------------------------------
- * Trust strip — tinted band under the hero; icon tiles are perfect white
- * circles with the site-wide shadow. Colors are all tokens.
+ * Trust strip — tinted band under the hero; icon tiles are white rounded
+ * squares matching the site-wide tile shape. Colors are all tokens.
  * ------------------------------------------------------------------------- */
 .trust-strip .wp-block-group.has-bg-background-color {
 	width: 56px;
@@ -297,7 +297,7 @@ p.has-accent-dark-color.has-sm-font-size {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 50%;
+	border-radius: var(--wp--custom--radius--md);
 	padding: 0 !important;
 	box-shadow: var(--wp--preset--shadow--soft);
 }
