@@ -22,9 +22,9 @@ ul.wp-block-list.is-style-checkmark-list li::before {
 	content: "";
 	position: absolute;
 	left: 0;
-	top: 0.125rem;
-	width: 22px;
-	height: 22px;
+	top: 0.0625rem;
+	width: 24px;
+	height: 24px;
 	background-color: var(--wp--preset--color--primary);
 	-webkit-mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PG1hc2sgaWQ9ImMiPjxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJtNy4yIDEyLjQgMy4xIDMuMSA2LjUtNyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyLjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvbWFzaz48L2RlZnM+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiIGZpbGw9ImJsYWNrIiBtYXNrPSJ1cmwoI2MpIi8+PC9zdmc+") center / contain no-repeat;
 	mask: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PG1hc2sgaWQ9ImMiPjxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJtNy4yIDEyLjQgMy4xIDMuMSA2LjUtNyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIyLjYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjwvbWFzaz48L2RlZnM+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiIGZpbGw9ImJsYWNrIiBtYXNrPSJ1cmwoI2MpIi8+PC9zdmc+") center / contain no-repeat;

@@ -248,6 +248,16 @@ footer.wp-block-template-part,
 	color: var(--wp--preset--color--accent-light) !important;
 }
 
+/* Card subtitles (sm + accent-dark = the card-subtitle signature; section
+   eyebrows are base-size and unaffected). Color is variation-tunable: a
+   style variation may define --wp--custom--card-subtitle (Ink sets it to
+   muted so the checkmarks own the green); without it, accent-dark stands.
+   !important counters WP's preset color classes. Hero rules above still
+   win on specificity inside hero sections. */
+p.has-accent-dark-color.has-sm-font-size {
+	color: var(--wp--custom--card-subtitle, var(--wp--preset--color--accent-dark)) !important;
+}
+
 /* Inline links in hero copy: white for contrast on the dark card. */
 .hero-section.has-background a:not(.wp-block-button__link) {
 	color: var(--wp--preset--color--bg) !important;

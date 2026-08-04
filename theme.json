@@ -19,7 +19,8 @@
 			},
 			"shadow": {
 				"dropdown": "var(--wp--preset--shadow--soft)"
-			}
+			},
+			"cardSubtitle": "var(--wp--preset--color--muted)"
 		},
 		"shadow": {
 			"presets": [
@@ -38,35 +39,107 @@
 			"defaultGradients": false,
 			"defaultPalette": false,
 			"palette": [
-				{ "slug": "bg", "color": "#ffffff", "name": "Background" },
-				{ "slug": "base", "color": "#ffffff", "name": "Base" },
-				{ "slug": "surface", "color": "#f8fafc", "name": "Surface" },
-				{ "slug": "ink", "color": "#0f172a", "name": "Ink" },
-				{ "slug": "contrast", "color": "#0f172a", "name": "Contrast" },
-				{ "slug": "muted", "color": "#64748b", "name": "Muted" },
-				{ "slug": "border", "color": "#e2e8f0", "name": "Border" },
-				{ "slug": "dark", "color": "#071a2f", "name": "Dark" },
-				{ "slug": "dark-soft", "color": "#0b2540", "name": "Dark Soft" },
-				{ "slug": "primary", "color": "#0f766e", "name": "Primary" },
-				{ "slug": "accent", "color": "#0e7f56", "name": "Accent" },
-				{ "slug": "accent-dark", "color": "#06634c", "name": "Accent Dark" },
-				{ "slug": "accent-light", "color": "#7fe0c3", "name": "Accent Light" },
-				{ "slug": "accent-tint", "color": "#e9f4ec", "name": "Accent Tint" },
-				{ "slug": "muted-light", "color": "#b8c6d6", "name": "Muted Light" },
-				{ "slug": "warning", "color": "#f59e0b", "name": "Warning" },
-				{ "slug": "score-red", "color": "#ff4e42", "name": "Score Red (PSI)" },
-				{ "slug": "score-green", "color": "#0cce6b", "name": "Score Green (PSI)" }
+				{
+					"slug": "bg",
+					"color": "#ffffff",
+					"name": "Background"
+				},
+				{
+					"slug": "base",
+					"color": "#ffffff",
+					"name": "Base"
+				},
+				{
+					"slug": "surface",
+					"color": "#f8fafc",
+					"name": "Surface"
+				},
+				{
+					"slug": "ink",
+					"color": "#0f172a",
+					"name": "Ink"
+				},
+				{
+					"slug": "contrast",
+					"color": "#0f172a",
+					"name": "Contrast"
+				},
+				{
+					"slug": "muted",
+					"color": "#64748b",
+					"name": "Muted"
+				},
+				{
+					"slug": "border",
+					"color": "#e2e8f0",
+					"name": "Border"
+				},
+				{
+					"slug": "dark",
+					"color": "#071a2f",
+					"name": "Dark"
+				},
+				{
+					"slug": "dark-soft",
+					"color": "#0b2540",
+					"name": "Dark Soft"
+				},
+				{
+					"slug": "primary",
+					"color": "#0f766e",
+					"name": "Primary"
+				},
+				{
+					"slug": "accent",
+					"color": "#0e7f56",
+					"name": "Accent"
+				},
+				{
+					"slug": "accent-dark",
+					"color": "#06634c",
+					"name": "Accent Dark"
+				},
+				{
+					"slug": "accent-light",
+					"color": "#7fe0c3",
+					"name": "Accent Light"
+				},
+				{
+					"slug": "accent-tint",
+					"color": "#f4f3ee",
+					"name": "Accent Tint"
+				},
+				{
+					"slug": "muted-light",
+					"color": "#b8c6d6",
+					"name": "Muted Light"
+				},
+				{
+					"slug": "warning",
+					"color": "#f59e0b",
+					"name": "Warning"
+				},
+				{
+					"slug": "score-red",
+					"color": "#ff4e42",
+					"name": "Score Red (PSI)"
+				},
+				{
+					"slug": "score-green",
+					"color": "#0cce6b",
+					"name": "Score Green (PSI)"
+				}
 			],
 			"gradients": [
 				{
 					"slug": "button-green",
 					"name": "Button Green",
-					"gradient": "linear-gradient(135deg, var(--wp--preset--color--dark-soft) 0%, var(--wp--preset--color--primary) 100%)"
+					"gradient": "linear-gradient(135deg, var(--wp--preset--color--accent-dark) 0%, var(--wp--preset--color--primary) 100%)"
 				},
 				{
 					"slug": "hero-dark",
 					"name": "Hero Dark",
-					"gradient": "linear-gradient(135deg, #071a2f 0%, #0b2540 55%, #0f766e 100%)"
+					"gradient": "linear-gradient(135deg, #071a2f 0%, #0b2540 55%, #11334d 100%)"
 				}
 			]
 		},
@@ -85,7 +158,9 @@
 							"fontWeight": "400 700",
 							"fontStyle": "normal",
 							"fontDisplay": "swap",
-							"src": [ "file:./assets/fonts/NotoSans-wght.woff2" ]
+							"src": [
+								"file:./assets/fonts/NotoSans-wght.woff2"
+							]
 						}
 					]
 				},
@@ -99,26 +174,87 @@
 							"fontWeight": "400 700",
 							"fontStyle": "normal",
 							"fontDisplay": "swap",
-							"src": [ "file:./assets/fonts/Lora-wght.woff2" ]
+							"src": [
+								"file:./assets/fonts/Lora-wght.woff2"
+							]
 						}
 					]
 				}
 			],
 			"fontSizes": [
-				{ "slug": "xs", "name": "Extra Small", "size": "0.875rem" },
-				{ "slug": "sm", "name": "Small", "size": "0.95rem" },
-				{ "slug": "base", "name": "Base", "size": "1rem" },
-				{ "slug": "lg", "name": "Large", "size": "1.125rem" },
-				{ "slug": "xl", "name": "Extra Large", "size": "1.375rem" },
-				{ "slug": "2-xl", "name": "2X Large", "size": "1.75rem" },
-				{ "slug": "3-xl", "name": "3X Large", "size": "2.25rem" },
-				{ "slug": "4-xl", "name": "4X Large", "size": "3rem" },
-				{ "slug": "small", "name": "Small (compat)", "size": "13px", "fluid": false },
-				{ "slug": "normal", "name": "Normal (compat)", "size": "16px", "fluid": false },
-				{ "slug": "medium", "name": "Medium (compat)", "size": "20px" },
-				{ "slug": "large", "name": "Large (compat)", "size": "36px" },
-				{ "slug": "x-large", "name": "X-Large (compat)", "size": "42px" },
-				{ "slug": "huge", "name": "Huge (compat)", "size": "42px", "fluid": false }
+				{
+					"slug": "xs",
+					"name": "Extra Small",
+					"size": "0.875rem"
+				},
+				{
+					"slug": "sm",
+					"name": "Small",
+					"size": "0.95rem"
+				},
+				{
+					"slug": "base",
+					"name": "Base",
+					"size": "1rem"
+				},
+				{
+					"slug": "lg",
+					"name": "Large",
+					"size": "1.125rem"
+				},
+				{
+					"slug": "xl",
+					"name": "Extra Large",
+					"size": "1.375rem"
+				},
+				{
+					"slug": "2-xl",
+					"name": "2X Large",
+					"size": "1.75rem"
+				},
+				{
+					"slug": "3-xl",
+					"name": "3X Large",
+					"size": "2.25rem"
+				},
+				{
+					"slug": "4-xl",
+					"name": "4X Large",
+					"size": "3rem"
+				},
+				{
+					"slug": "small",
+					"name": "Small (compat)",
+					"size": "13px",
+					"fluid": false
+				},
+				{
+					"slug": "normal",
+					"name": "Normal (compat)",
+					"size": "16px",
+					"fluid": false
+				},
+				{
+					"slug": "medium",
+					"name": "Medium (compat)",
+					"size": "20px"
+				},
+				{
+					"slug": "large",
+					"name": "Large (compat)",
+					"size": "36px"
+				},
+				{
+					"slug": "x-large",
+					"name": "X-Large (compat)",
+					"size": "42px"
+				},
+				{
+					"slug": "huge",
+					"name": "Huge (compat)",
+					"size": "42px",
+					"fluid": false
+				}
 			]
 		},
 		"spacing": {
@@ -127,7 +263,14 @@
 				"steps": 8,
 				"mediumStep": 1.25
 			},
-			"units": [ "px", "rem", "em", "vh", "vw", "%" ]
+			"units": [
+				"px",
+				"rem",
+				"em",
+				"vh",
+				"vw",
+				"%"
+			]
 		}
 	},
 	"styles": {
@@ -348,8 +491,16 @@
 		}
 	},
 	"templateParts": [
-		{ "name": "header", "title": "Header", "area": "header" },
-		{ "name": "footer", "title": "Footer", "area": "footer" }
+		{
+			"name": "header",
+			"title": "Header",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"title": "Footer",
+			"area": "footer"
+		}
 	],
 	"customTemplates": []
 }
