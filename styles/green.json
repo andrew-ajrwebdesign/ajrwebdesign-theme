@@ -9,24 +9,101 @@
 		},
 		"color": {
 			"palette": [
-				{ "slug": "bg", "color": "#ffffff", "name": "Background" },
-				{ "slug": "base", "color": "#ffffff", "name": "Base" },
-				{ "slug": "surface", "color": "#f8fafc", "name": "Surface" },
-				{ "slug": "ink", "color": "#0f172a", "name": "Ink" },
-				{ "slug": "contrast", "color": "#0f172a", "name": "Contrast" },
-				{ "slug": "muted", "color": "#64748b", "name": "Muted" },
-				{ "slug": "border", "color": "#e2e8f0", "name": "Border" },
-				{ "slug": "dark", "color": "#071a2f", "name": "Dark" },
-				{ "slug": "dark-soft", "color": "#0b2540", "name": "Dark soft" },
-				{ "slug": "primary", "color": "#0f766e", "name": "Primary" },
-				{ "slug": "accent", "color": "#0e7f56", "name": "Accent" },
-				{ "slug": "accent-dark", "color": "#06634c", "name": "Accent dark" },
-				{ "slug": "accent-light", "color": "#7fe0c3", "name": "Accent light" },
-				{ "slug": "accent-tint", "color": "#e9f4ec", "name": "Accent tint" },
-				{ "slug": "muted-light", "color": "#b8c6d6", "name": "Muted light" },
-				{ "slug": "warning", "color": "#f59e0b", "name": "Warning" },
-				{ "slug": "score-red", "color": "#ff4e42", "name": "Score red" },
-				{ "slug": "score-green", "color": "#0cce6b", "name": "Score green" }
+				{
+					"slug": "bg",
+					"color": "#ffffff",
+					"name": "Background"
+				},
+				{
+					"slug": "base",
+					"color": "#ffffff",
+					"name": "Base"
+				},
+				{
+					"slug": "surface",
+					"color": "#f8fafc",
+					"name": "Surface"
+				},
+				{
+					"slug": "ink",
+					"color": "#0f172a",
+					"name": "Ink"
+				},
+				{
+					"slug": "contrast",
+					"color": "#0f172a",
+					"name": "Contrast"
+				},
+				{
+					"slug": "muted",
+					"color": "#64748b",
+					"name": "Muted"
+				},
+				{
+					"slug": "border",
+					"color": "#e2e8f0",
+					"name": "Border"
+				},
+				{
+					"slug": "dark",
+					"color": "#071a2f",
+					"name": "Dark"
+				},
+				{
+					"slug": "dark-soft",
+					"color": "#0b2540",
+					"name": "Dark soft"
+				},
+				{
+					"slug": "dark-lift",
+					"color": "#11334d",
+					"name": "Dark lift"
+				},
+				{
+					"slug": "primary",
+					"color": "#0f766e",
+					"name": "Primary"
+				},
+				{
+					"slug": "accent",
+					"color": "#0e7f56",
+					"name": "Accent"
+				},
+				{
+					"slug": "accent-dark",
+					"color": "#06634c",
+					"name": "Accent dark"
+				},
+				{
+					"slug": "accent-light",
+					"color": "#7fe0c3",
+					"name": "Accent light"
+				},
+				{
+					"slug": "accent-tint",
+					"color": "#e9f4ec",
+					"name": "Accent tint"
+				},
+				{
+					"slug": "muted-light",
+					"color": "#b8c6d6",
+					"name": "Muted light"
+				},
+				{
+					"slug": "warning",
+					"color": "#f59e0b",
+					"name": "Warning"
+				},
+				{
+					"slug": "score-red",
+					"color": "#ff4e42",
+					"name": "Score red"
+				},
+				{
+					"slug": "score-green",
+					"color": "#0cce6b",
+					"name": "Score green"
+				}
 			],
 			"gradients": [
 				{
@@ -36,7 +113,7 @@
 				},
 				{
 					"slug": "hero-dark",
-					"gradient": "linear-gradient(135deg, #071a2f 0%, #0b2540 55%, #0f766e 100%)",
+					"gradient": "linear-gradient(135deg, var(--wp--preset--color--dark) 0%, var(--wp--preset--color--dark-soft) 55%, var(--wp--preset--color--primary) 100%)",
 					"name": "Hero dark"
 				}
 			]

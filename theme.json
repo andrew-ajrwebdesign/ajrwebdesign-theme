@@ -85,6 +85,11 @@
 					"name": "Dark Soft"
 				},
 				{
+					"slug": "dark-lift",
+					"color": "#11334d",
+					"name": "Dark lift"
+				},
+				{
 					"slug": "primary",
 					"color": "#0f766e",
 					"name": "Primary"
@@ -139,7 +144,7 @@
 				{
 					"slug": "hero-dark",
 					"name": "Hero Dark",
-					"gradient": "linear-gradient(135deg, #071a2f 0%, #0b2540 55%, #11334d 100%)"
+					"gradient": "linear-gradient(135deg, var(--wp--preset--color--dark) 0%, var(--wp--preset--color--dark-soft) 55%, var(--wp--preset--color--dark-lift) 100%)"
 				}
 			]
 		},
