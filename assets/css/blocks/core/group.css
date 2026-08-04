@@ -62,8 +62,8 @@
 .sb-dev { padding-bottom: var(--wp--preset--spacing--80); }
 .sb-dev .sb-code-img {
 	position: absolute;
-	right: -24px;
-	bottom: 16px;
+	right: -26px;
+	bottom: -26px;
 	width: 235px;
 	max-width: 42%;
 	margin: 0;
