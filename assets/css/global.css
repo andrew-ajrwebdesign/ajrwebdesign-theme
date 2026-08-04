@@ -324,6 +324,29 @@ p.has-accent-dark-color.has-sm-font-size {
 	width: fit-content;
 }
 
+/* On phones, feature rows keep the icon BESIDE the text block instead of
+   stacking — counters core's stack-on-mobile flex-basis (which is
+   !important). Icon column shrink-wraps; text column takes the rest. */
+@media (max-width: 781px) {
+	/* Core sets flex-wrap: wrap !important and flex-basis: 100% !important
+	   on mobile columns; both counters need !important plus one class of
+	   specificity headroom over core's 3-class selectors. */
+	.feature-rows > .wp-block-columns {
+		flex-wrap: nowrap !important;
+		gap: var(--wp--preset--spacing--30);
+	}
+
+	.feature-rows > .wp-block-columns > .wp-block-column:not(:first-child) {
+		flex-basis: 0 !important;
+		flex-grow: 1;
+	}
+
+	.feature-rows > .wp-block-columns > .wp-block-column:first-child {
+		flex: 0 0 auto !important;
+		width: auto !important;
+	}
+}
+
 /* Pricing cards (round 16) — option-1 plan cards on the maintenance pages.
    Cards are real blocks; these rules add the composition: equal heights,
    serif price, featured lift, pill. */
