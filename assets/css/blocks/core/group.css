@@ -17,3 +17,111 @@
 .is-style-service-card > .wp-block-group:last-child {
 	margin-top: auto;
 }
+
+/* core/group — services bento grid (home).
+   Six cards: one flagship (dev), four tiles, one full-width dark
+   spotlight banner (ads). Card backgrounds and padding come from block
+   attributes; this file owns only layout, borders, and decoration. */
+.services-bento {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas:
+		"dev dev perf seo"
+		"dev dev maint cta"
+		"ads ads ads ads";
+	gap: 20px;
+}
+
+.services-bento > .sb-dev { grid-area: dev; }
+.services-bento > .sb-perf { grid-area: perf; }
+.services-bento > .sb-seo { grid-area: seo; }
+.services-bento > .sb-maint { grid-area: maint; }
+.services-bento > .sb-cta { grid-area: cta; }
+.services-bento > .sb-ads { grid-area: ads; }
+
+.services-bento > .wp-block-group {
+	position: relative;
+	overflow: hidden;
+	border: 1px solid var(--wp--preset--color--border);
+	border-radius: 14px;
+	box-shadow: var(--wp--preset--shadow--soft);
+}
+
+.services-bento > .sb-cta { border-style: dashed; }
+.services-bento > .sb-ads { border: none; }
+
+/* Bento cards use compact inline icon tiles. */
+.services-bento .card-ico {
+	width: 22px;
+	height: 22px;
+}
+
+/* Flagship card: room for the decorative code window. */
+.sb-dev { padding-bottom: var(--wp--preset--spacing--80); }
+.sb-dev .sb-code-img {
+	position: absolute;
+	right: -24px;
+	bottom: -20px;
+	width: 290px;
+	max-width: 52%;
+	margin: 0;
+	pointer-events: none;
+}
+
+/* Ads spotlight banner internals. */
+.sb-ads .card-ico { background-color: var(--wp--preset--color--accent-light); }
+.sb-new {
+	background-color: var(--wp--preset--color--score-green);
+	color: var(--wp--preset--color--dark);
+	font-size: 10.5px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: 3px 9px;
+	border-radius: 999px;
+}
+.sb-stat {
+	background-color: color-mix(in srgb, var(--wp--preset--color--bg) 8%, transparent);
+	border: 1px solid color-mix(in srgb, var(--wp--preset--color--bg) 14%, transparent);
+	border-radius: 12px;
+	padding: 12px 18px;
+	min-width: 128px;
+}
+.sb-stat-l {
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: var(--wp--preset--color--muted-light);
+}
+.sb-stat-v {
+	color: var(--wp--preset--color--score-green);
+	font-size: 12px;
+	font-weight: 700;
+}
+.sb-stat-v strong {
+	color: var(--wp--preset--color--bg);
+	font-size: 22px;
+	font-weight: 800;
+	margin-right: 4px;
+}
+
+@media (max-width: 1023px) {
+	.services-bento {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			"dev dev"
+			"perf seo"
+			"maint cta"
+			"ads ads";
+	}
+}
+
+@media (max-width: 599px) {
+	.services-bento {
+		grid-template-columns: 1fr;
+		grid-template-areas: "dev" "perf" "seo" "maint" "cta" "ads";
+	}
+	.sb-dev .sb-code-img { display: none; }
+	.sb-dev { padding-bottom: var(--wp--preset--spacing--60); }
+}
