@@ -219,6 +219,7 @@ footer.wp-block-template-part,
 .card-ico--bulb { -webkit-mask-image: url("../img/icons/bulb.svg"); mask-image: url("../img/icons/bulb.svg"); }
 .card-ico--bulb-check { -webkit-mask-image: url("../img/icons/bulb-check.svg"); mask-image: url("../img/icons/bulb-check.svg"); }
 .card-ico--question { -webkit-mask-image: url("../img/icons/question.svg"); mask-image: url("../img/icons/question.svg"); }
+.card-ico--target { -webkit-mask-image: url("../img/icons/target.svg"); mask-image: url("../img/icons/target.svg"); }
 .card-ico--cart { -webkit-mask-image: url("../img/icons/cart.svg"); mask-image: url("../img/icons/cart.svg"); }
 .card-ico--headset { -webkit-mask-image: url("../img/icons/headset.svg"); mask-image: url("../img/icons/headset.svg"); }
 

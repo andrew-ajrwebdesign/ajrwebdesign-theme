@@ -182,6 +182,7 @@
 .site-header .nav-ico--seo > .wp-block-navigation-item__content::after { -webkit-mask-image: url("../../../img/icons/seo.svg"); mask-image: url("../../../img/icons/seo.svg"); }
 .site-header .nav-ico--dev > .wp-block-navigation-item__content::after { -webkit-mask-image: url("../../../img/icons/code.svg"); mask-image: url("../../../img/icons/code.svg"); }
 .site-header .nav-ico--care > .wp-block-navigation-item__content::after { -webkit-mask-image: url("../../../img/icons/shield.svg"); mask-image: url("../../../img/icons/shield.svg"); }
+.site-header .nav-ico--ads > .wp-block-navigation-item__content::after { -webkit-mask-image: url("../../../img/icons/target.svg"); mask-image: url("../../../img/icons/target.svg"); }
 
 /* ---------------------------------------------------------------------------
  * Mobile overlay — reset the desktop dropdown styling to a clean vertical
