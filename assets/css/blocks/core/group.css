@@ -104,6 +104,45 @@
 	margin-right: 4px;
 }
 
+/* Card links: no underline, mask-drawn arrow that slides on hover. */
+.services-bento p a,
+.sb-ads .wp-block-button__link {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	text-decoration: none;
+}
+
+.services-bento p a::after,
+.sb-ads .wp-block-button__link::after {
+	content: "";
+	flex: 0 0 15px;
+	width: 15px;
+	height: 15px;
+	background-color: currentColor;
+	-webkit-mask-image: url("../../../img/icons/arrow-right.svg");
+	mask-image: url("../../../img/icons/arrow-right.svg");
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.services-bento p a::after,
+	.sb-ads .wp-block-button__link::after {
+		transition: transform 0.2s ease;
+	}
+}
+
+.services-bento p a:hover::after,
+.services-bento p a:focus-visible::after,
+.sb-ads .wp-block-button__link:hover::after {
+	transform: translateX(4px);
+}
+
 @media (max-width: 1023px) {
 	.services-bento {
 		grid-template-columns: repeat(2, 1fr);
