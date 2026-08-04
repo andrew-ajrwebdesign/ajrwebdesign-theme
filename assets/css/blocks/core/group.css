@@ -29,6 +29,7 @@
 		"dev dev perf seo"
 		"dev dev maint cta"
 		"ads ads ads ads";
+	grid-template-rows: 1fr 1fr auto;
 	gap: 20px;
 }
 
@@ -42,6 +43,7 @@
 .services-bento > .wp-block-group {
 	position: relative;
 	overflow: hidden;
+	margin-block-start: 0;
 	border: 1px solid var(--wp--preset--color--border);
 	border-radius: 14px;
 	box-shadow: var(--wp--preset--shadow--soft);
@@ -61,9 +63,9 @@
 .sb-dev .sb-code-img {
 	position: absolute;
 	right: -24px;
-	bottom: -20px;
-	width: 290px;
-	max-width: 52%;
+	bottom: 16px;
+	width: 235px;
+	max-width: 42%;
 	margin: 0;
 	pointer-events: none;
 }
