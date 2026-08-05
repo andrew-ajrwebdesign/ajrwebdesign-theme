@@ -365,6 +365,13 @@ p.has-accent-dark-color.has-sm-font-size {
 	display: flex;
 }
 
+/* Tailored-plan CTA strip (round 32) — dark spotlight band under the plan
+   cards, echoing the home bento's ads band; the mask icon reads light on
+   navy (base .card-ico is primary-on-light). */
+.pricing-strip--dark .card-ico {
+	background-color: var(--wp--preset--color--accent-light);
+}
+
 .pricing-card {
 	position: relative;
 	flex: 1;

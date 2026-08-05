@@ -104,9 +104,11 @@
 	margin-right: 4px;
 }
 
-/* Card links: no underline, mask-drawn arrow that slides on hover. */
+/* Card links: no underline, mask-drawn arrow that slides on hover.
+   Also used by the maintenance pricing-strip dark CTA band. */
 .services-bento p a,
-.sb-ads .wp-block-button__link {
+.sb-ads .wp-block-button__link,
+.pricing-strip--dark .wp-block-button__link {
 	display: inline-flex;
 	align-items: center;
 	gap: 8px;
@@ -114,7 +116,8 @@
 }
 
 .services-bento p a::after,
-.sb-ads .wp-block-button__link::after {
+.sb-ads .wp-block-button__link::after,
+.pricing-strip--dark .wp-block-button__link::after {
 	content: "";
 	flex: 0 0 15px;
 	width: 15px;
@@ -132,14 +135,16 @@
 
 @media (prefers-reduced-motion: no-preference) {
 	.services-bento p a::after,
-	.sb-ads .wp-block-button__link::after {
+	.sb-ads .wp-block-button__link::after,
+	.pricing-strip--dark .wp-block-button__link::after {
 		transition: transform 0.2s ease;
 	}
 }
 
 .services-bento p a:hover::after,
 .services-bento p a:focus-visible::after,
-.sb-ads .wp-block-button__link:hover::after {
+.sb-ads .wp-block-button__link:hover::after,
+.pricing-strip--dark .wp-block-button__link:hover::after {
 	transform: translateX(4px);
 }
 
