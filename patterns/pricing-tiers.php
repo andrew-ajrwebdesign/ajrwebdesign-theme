@@ -3,7 +3,7 @@
  * Title: Pricing Tiers
  * Slug: ajrwebdesign/pricing-tiers
  * Categories: text
- * Description: Support-plan pricing: four plan cards on a tinted band (maintenance, performance/SEO, ads, tailored), featured second card with pill and filled CTA.
+ * Description: Support-plan pricing: three plan cards on a tinted band (maintenance, performance/SEO, ads) with featured middle card, plus a full-width tailored-plan CTA strip.
  *
  * @package AJRWebDesign_Theme
  */
@@ -152,46 +152,28 @@
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div>
-<!-- /wp:column -->
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
 
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"className":"pricing-card","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|30"},"shadow":"var:preset|shadow|soft"},"backgroundColor":"bg","layout":{"type":"constrained"}} -->
-<div class="wp-block-group pricing-card has-bg-background-color has-background" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50);box-shadow:var(--wp--preset--shadow--soft)"><!-- wp:paragraph {"className":"pricing-card__name"} -->
+<!-- wp:group {"className":"pricing-strip","style":{"spacing":{"margin":{"top":"var:preset|spacing|50"},"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}},"shadow":"var:preset|shadow|soft"},"backgroundColor":"bg","layout":{"type":"constrained"}} -->
+<div class="wp-block-group pricing-strip has-bg-background-color has-background" style="margin-top:var(--wp--preset--spacing--50);padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50);box-shadow:var(--wp--preset--shadow--soft)"><!-- wp:columns {"verticalAlignment":"center","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|50"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"70%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:70%"><!-- wp:paragraph {"className":"pricing-card__name"} -->
 <p class="pricing-card__name">Fully Tailored</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"className":"pricing-card__price"} -->
-<p class="pricing-card__price">Custom</p>
-<!-- /wp:paragraph -->
-
 <!-- wp:paragraph {"className":"pricing-card__desc"} -->
-<p class="pricing-card__desc">A plan built entirely around your site and your goals.</p>
-<!-- /wp:paragraph -->
+<p class="pricing-card__desc">Need more than a set plan? E-commerce &amp; WooCommerce, multilingual sites, development hours included — a package built entirely around your site and your goals.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
 
-<!-- wp:list {"className":"is-style-checkmark-list pricing-card__feats"} -->
-<ul class="wp-block-list is-style-checkmark-list pricing-card__feats"><!-- wp:list-item -->
-<li>E-commerce &amp; WooCommerce support</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Multilingual sites</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Development hours included</li>
-<!-- /wp:list-item -->
-
-<!-- wp:list-item -->
-<li>Built around your goals</li>
-<!-- /wp:list-item --></ul>
-<!-- /wp:list -->
-
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<!-- wp:column {"verticalAlignment":"center","width":"30%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:30%"><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"textAlign":"center","textColor":"accent-dark","width":100,"className":"is-style-outline","style":{"border":{"width":"2px"},"elements":{"link":{"color":{"text":"var:preset|color|accent-dark"}}}},"fontSize":"xs","borderColor":"accent-dark"} -->
 <div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline"><a class="wp-block-button__link has-accent-dark-color has-text-color has-link-color has-border-color has-accent-dark-border-color has-xs-font-size has-text-align-center has-custom-font-size wp-element-button" href="https://calendly.com/ajrwebdesign/discussion-call" style="border-width:2px">Find Out More</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
-<!-- /wp:group --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns --></section>
+<!-- /wp:columns --></div>
+<!-- /wp:group --></section>
 <!-- /wp:group -->
