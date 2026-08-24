@@ -29,7 +29,7 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"58.33%","className":"cs-story__content"} -->
-<div class="wp-block-column cs-story__content" style="flex-basis:58.33%"><!-- wp:group {"tagName":"article","layout":{"type":"constrained"}} -->
+<div class="wp-block-column cs-story__content" style="flex-basis:58.33%"><!-- wp:group {"tagName":"article","metadata":{"name":"Case Study Narrative"},"layout":{"type":"constrained"}} -->
 <article class="wp-block-group"><!-- wp:post-content {"layout":{"type":"constrained"}} /--></article>
 <!-- /wp:group --></div>
 <!-- /wp:column --></div>

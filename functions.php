@@ -33,7 +33,6 @@ add_action(
 				// Footer.
 				'Main Nav',
 				'Services',
-				'Get in Touch',
 				'© 2026 ajrwebdesign. All rights reserved.',
 				// Blog home template (renders the DE Ressourcen page too).
 				'WordPress Performance & SEO Resources',

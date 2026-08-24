@@ -5,7 +5,8 @@
 			"match": "single-ajr_case_study.html — no h1 block",
 			"why": "The h1 renders from the ajrwebdesign-core case-study-card block's hero variant (patterns/cs-hero.php), which a static template scan cannot see. Verified rendered: exactly one h1 per single, clean h1>h2>h3 hierarchy (2026-08-24 render check).",
 			"on": "2026-08-24",
-			"expiresAtVersion": "1.10.0"
+			"review": "Renewed at 1.10.1 (footer-only release) — re-verified: the h1 still renders from the case-study-card hero variant, one per single.",
+			"expiresAtVersion": "1.10.1"
 		}
 	]
 }

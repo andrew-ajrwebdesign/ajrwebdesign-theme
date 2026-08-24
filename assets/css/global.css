@@ -547,3 +547,32 @@ p.has-accent-dark-color.has-sm-font-size {
 		position: static;
 	}
 }
+
+/* Footer polish (2026-08-24): eyebrow-style column headings, tighter and
+	smaller menu items, socials tucked under the brand column. */
+footer.wp-block-template-part .footer-heading {
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	margin-block-end: var(--wp--preset--spacing--30);
+	text-transform: uppercase;
+}
+footer.wp-block-template-part .wp-block-navigation__container {
+	/* Raw value, deliberately: the approved look sits between scale steps
+	   (spacing-20 computes 5.92px — cramped; spacing-30 too airy). */
+	gap: 10px;
+}
+footer.wp-block-template-part .footer-tagline {
+	/* Constrained layout auto-centres width-capped children — pin it left. */
+	margin-inline: 0 !important; /* core layout margin-auto is !important */
+	margin-block-start: var(--wp--preset--spacing--20);
+	max-width: 34ch;
+}
+footer.wp-block-template-part .footer-social {
+	gap: 10px; /* matches the nav gap above — same between-steps rationale */
+	margin-block-start: var(--wp--preset--spacing--40);
+}
+@media (max-width: 781px) {
+	footer.wp-block-template-part .wp-block-navigation.items-justified-right {
+		justify-content: flex-start;
+	}
+}
