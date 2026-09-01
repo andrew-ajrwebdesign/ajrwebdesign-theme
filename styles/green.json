@@ -36,7 +36,7 @@
 				},
 				{
 					"slug": "muted",
-					"color": "#64748b",
+					"color": "#5f6e85",
 					"name": "Muted"
 				},
 				{
@@ -103,6 +103,16 @@
 					"slug": "score-green",
 					"color": "#0cce6b",
 					"name": "Score green"
+				},
+				{
+					"slug": "score-red-text",
+					"color": "#cc2b1f",
+					"name": "Score red (text)"
+				},
+				{
+					"slug": "score-green-text",
+					"color": "#07783f",
+					"name": "Score green (text)"
 				}
 			],
 			"gradients": [

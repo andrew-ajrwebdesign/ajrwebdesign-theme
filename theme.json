@@ -66,7 +66,7 @@
 				},
 				{
 					"slug": "muted",
-					"color": "#64748b",
+					"color": "#5f6e85",
 					"name": "Muted"
 				},
 				{
@@ -133,6 +133,16 @@
 					"slug": "score-green",
 					"color": "#0cce6b",
 					"name": "Score Green (PSI)"
+				},
+				{
+					"slug": "score-red-text",
+					"color": "#cc2b1f",
+					"name": "Score Red (text)"
+				},
+				{
+					"slug": "score-green-text",
+					"color": "#07783f",
+					"name": "Score Green (text)"
 				}
 			],
 			"gradients": [
