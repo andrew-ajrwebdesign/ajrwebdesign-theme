@@ -130,14 +130,15 @@ add_action(
 	'init',
 	function () {
 		$block_styles = array(
-			'core/button'            => 'core/button',
-			'core/navigation'        => 'core/navigation',
-			'core/search'            => 'core/search',
-			'core/comments'          => 'core/comments',
-			'core/list'              => 'core/list',
-			'core/accordion-item'  => 'core/accordion',
-			'core/group'             => 'core/group',
-			'wpforms/form-selector'  => 'wpforms',
+			'core/button'           => 'core/button',
+			'core/breadcrumbs'      => 'core/breadcrumbs',
+			'core/navigation'       => 'core/navigation',
+			'core/search'           => 'core/search',
+			'core/comments'         => 'core/comments',
+			'core/list'             => 'core/list',
+			'core/accordion-item'   => 'core/accordion',
+			'core/group'            => 'core/group',
+			'wpforms/form-selector' => 'wpforms',
 		);
 
 		foreach ( $block_styles as $block => $file ) {
