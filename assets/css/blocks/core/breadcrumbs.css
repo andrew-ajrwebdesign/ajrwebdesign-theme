@@ -1,5 +1,7 @@
-/* core/breadcrumbs in the site's look (inlined per post, so kept short). */
+/* core/breadcrumbs in the site's look (inlined per post, so kept short). Inline, as the
+   old trail was: it sits in a text line, which sets the space around it. */
 .wp-block-breadcrumbs {
+	display: inline-block;
 	color: var(--wp--preset--color--muted);
 	font-size: 0.875rem;
 	font-weight: 500;
