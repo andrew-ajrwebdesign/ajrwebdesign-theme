@@ -1,10 +1,4 @@
-/*
- * core/breadcrumbs — the post trail (Home › Blog › Category) in the site's look.
- *
- * Replaces the ajrwebdesign-core/breadcrumbs block (theme 1.12.0). WordPress's own block
- * supplies the markup — <nav><ol><li>, the current item as aria-current — and draws the
- * separator from its --separator custom property; this file only styles it.
- */
+/* core/breadcrumbs in the site's look (inlined per post, so kept short). */
 .wp-block-breadcrumbs {
 	color: var(--wp--preset--color--muted);
 	font-size: 0.875rem;

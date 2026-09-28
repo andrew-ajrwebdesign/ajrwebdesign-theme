@@ -67,7 +67,7 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:group {"className":"pricing-card pricing-cardu002du002dfeatured","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|30"},"shadow":"var:preset|shadow|soft"},"backgroundColor":"bg","layout":{"type":"constrained"}} -->
+<div class="wp-block-column"><!-- wp:group {"className":"pricing-card pricing-card\u002d\u002dfeatured","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|30"},"shadow":"var:preset|shadow|soft"},"backgroundColor":"bg","layout":{"type":"constrained"}} -->
 <div class="wp-block-group pricing-card pricing-card--featured has-bg-background-color has-background" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50);box-shadow:var(--wp--preset--shadow--soft)"><!-- wp:paragraph {"className":"pricing-card__pill"} -->
 <p class="pricing-card__pill">Most Popular</p>
 <!-- /wp:paragraph -->

@@ -8,7 +8,7 @@
  * @package AJRWebDesign_Theme
  */
 ?>
-<!-- wp:group {"tagName":"section","align":"full","className":"faq-section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"},"blockGap":"var:preset|spacing|70"}},"backgroundColor":"surface","layout":{"type":"constrained"}} -->
+<!-- wp:group {"metadata":{"name":"Common questions"},"tagName":"section","align":"full","className":"faq-section","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"},"blockGap":"var:preset|spacing|70"}},"backgroundColor":"surface","layout":{"type":"constrained"}} -->
 <section class="wp-block-group alignfull faq-section has-surface-background-color has-background" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80)"><!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|70"}}}} --><div class="wp-block-columns"><!-- wp:column {"width":"41.66%"} --><div class="wp-block-column" style="flex-basis:41.66%"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained","contentSize":"700px"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"align":"left","style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"800","letterSpacing":"0.3px"},"elements":{"link":{"color":{"text":"var:preset|color|accent-dark"}}}},"textColor":"accent-dark","fontSize":"xs"} -->

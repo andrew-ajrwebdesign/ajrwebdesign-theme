@@ -36,7 +36,7 @@
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":603,"width":"75px","sizeSlug":"full","linkDestination":"none","className":"is-style-rounded"} -->
-<figure class="wp-block-image size-full is-resized is-style-rounded"><img src="/wp-content/uploads/2026/04/1771610601670.jpg" alt="Tom Profile image" class="wp-image-603" style="width:75px"/></figure>
+<figure class="wp-block-image size-full is-resized is-style-rounded"><img src="<?php echo esc_url( (string) wp_get_attachment_image_url( 603, 'full' ) ); ?>" alt="Tom Profile image" class="wp-image-603" style="width:75px;height:auto"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
@@ -66,7 +66,7 @@
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 <div class="wp-block-group"><!-- wp:image {"id":602,"width":"75px","sizeSlug":"full","linkDestination":"none","className":"is-style-rounded"} -->
-<figure class="wp-block-image size-full is-resized is-style-rounded"><img src="/wp-content/uploads/2026/04/1716294000266.jpg" alt="Giles Profile Image" class="wp-image-602" style="width:75px"/></figure>
+<figure class="wp-block-image size-full is-resized is-style-rounded"><img src="<?php echo esc_url( (string) wp_get_attachment_image_url( 602, 'full' ) ); ?>" alt="Giles Profile Image" class="wp-image-602" style="width:75px;height:auto"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"constrained"}} -->
