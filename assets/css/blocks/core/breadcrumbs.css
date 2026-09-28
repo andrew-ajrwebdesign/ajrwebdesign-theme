@@ -1,0 +1,36 @@
+/* core/breadcrumbs in the site's look (inlined per post, so kept short). Inline, as the
+   old trail was: it sits in a text line, which sets the space around it. */
+.wp-block-breadcrumbs {
+	display: inline-block;
+	color: var(--wp--preset--color--muted);
+	font-size: 0.875rem;
+	font-weight: 500;
+	line-height: 1;
+}
+
+.wp-block-breadcrumbs ol {
+	column-gap: 0.5rem;
+	row-gap: 0.25rem;
+}
+
+.wp-block-breadcrumbs li:not(:last-child)::after {
+	margin-inline: 0.5rem 0;
+	color: var(--wp--preset--color--muted-light);
+	font-size: 1rem;
+	opacity: 1;
+}
+
+.wp-block-breadcrumbs a {
+	color: var(--wp--preset--color--primary);
+	text-decoration: none;
+}
+
+.wp-block-breadcrumbs a:hover {
+	color: var(--wp--preset--color--accent-dark);
+	text-decoration: underline;
+}
+
+.wp-block-breadcrumbs a:focus-visible {
+	outline: 2px solid currentcolor;
+	outline-offset: 2px;
+}
