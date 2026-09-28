@@ -19,5 +19,5 @@
 <h2 class="wp-block-heading has-text-align-center"><?php esc_html_e( 'What clients say about working with me', 'ajrwebdesign-theme' ); ?></h2>
 <!-- /wp:heading -->
 
-<!-- wp:ajrwebdesign-core/testimonials-slider {"count":2,"perView":2,"tags":["featured"],"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} /--></section>
+<!-- wp:ajr/testimonials {"count":2,"perView":2,"tags":["featured"],"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} /--></section>
 <!-- /wp:group -->
