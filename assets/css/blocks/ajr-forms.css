@@ -1,0 +1,110 @@
+/*
+ * Block: ajr-forms/form — loaded only when an AJR Form is on the page.
+ *
+ * Matches the contact form the site had under WPForms (baseline: claude-workspace
+ * clients/ajrwebdesign/ajr-forms-baseline, 2026-09-29), in tokens: WPForms' stored
+ * black-at-85% labels and blue focus border become ink and the brand primary, its
+ * 25% input borders become 50% (contrast), and its pill button became a site button.
+ *
+ * The plugin styles its controls at 0,2,1, so control rules here carry the block's
+ * own class as well (0,3,1): a theme overriding a plugin, not a specificity habit.
+ */
+
+/* The plugin's own knobs first — colours and radius flow from these. */
+.ajr-form.wp-block-ajr-forms-form {
+	--ajr-gap: 30px;
+	--ajr-line: color-mix(in srgb, var(--wp--preset--color--ink) 25%, transparent);
+	/* 50%, not WPForms' 25%: a control's edge needs 3:1 against the page (WCAG 1.4.11); 45% measured 2.93:1. */
+	--ajr-line-strong: color-mix(in srgb, var(--wp--preset--color--ink) 50%, transparent);
+	--ajr-surface: var(--wp--preset--color--bg);
+	--ajr-accent: var(--wp--preset--color--primary);
+	--ajr-focus: var(--wp--preset--color--primary);
+	--ajr-error: var(--wp--preset--color--score-red-text);
+	--ajr-radius: 3px;
+
+	margin-block-start: 39px; /* WPForms' 24px container margin + its first field's 15px padding. */
+	color: var(--wp--preset--color--ink);
+}
+
+.ajr-form.wp-block-ajr-forms-form .ajr-field {
+	gap: 15px;
+}
+
+.ajr-form.wp-block-ajr-forms-form .ajr-field__label {
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+/* "(required)" stays in the markup for screen readers; sighted visitors get the red star. */
+.ajr-form.wp-block-ajr-forms-form .ajr-field__required {
+	font-size: 0;
+	opacity: 1;
+}
+
+.ajr-form.wp-block-ajr-forms-form .ajr-field__required::after {
+	content: "*";
+	content: "*" / ""; /* Empty alt text: screen readers already hear "(required)". */
+	font-size: var(--wp--preset--font-size--base, 1rem);
+	font-weight: 400;
+	color: var(--ajr-error);
+}
+
+.ajr-form.wp-block-ajr-forms-form .ajr-field :is(input, textarea) {
+	min-block-size: 43px;
+	padding-block: 0;
+	padding-inline: 14px;
+	line-height: 1;
+	color: color-mix(in srgb, var(--wp--preset--color--ink) 75%, transparent);
+}
+
+.ajr-form.wp-block-ajr-forms-form .ajr-field textarea {
+	block-size: 120px;
+	padding-block: 14px;
+	line-height: 1.3;
+}
+
+.ajr-form.wp-block-ajr-forms-form .ajr-field :is(input, textarea):focus {
+	border-color: var(--wp--preset--color--primary);
+}
+
+/*
+ * The send button is a site button (Andrew, 2026-09-29: "match the site buttons"). Its colour,
+ * gradient and radius come from theme.json's button element (.wp-element-button); the size, hover
+ * and focus below repeat assets/css/blocks/core/button.css, which only targets Button blocks.
+ */
+.ajr-form.wp-block-ajr-forms-form .ajr-form__submit {
+	padding-block: 0.85rem;
+	padding-inline: 2rem;
+	font-size: var(--wp--preset--font-size--xs);
+	font-weight: 500;
+	line-height: 1.2;
+	border: 2px solid transparent;
+	transition: filter 150ms ease, box-shadow 150ms ease;
+}
+
+.ajr-form.wp-block-ajr-forms-form .ajr-form__submit:hover {
+	filter: brightness(1.15);
+	box-shadow: var(--wp--preset--shadow--soft);
+}
+
+.ajr-form.wp-block-ajr-forms-form .ajr-form__submit:focus-visible {
+	outline: 2px solid var(--wp--preset--color--primary);
+	outline-offset: 3px;
+}
+
+/* Mobile first: the send button is full width, like every content button, until 782px. */
+.ajr-form.wp-block-ajr-forms-form .ajr-field--submit {
+	align-items: stretch;
+}
+
+@media (min-width: 782px) {
+	.ajr-form.wp-block-ajr-forms-form .ajr-field--submit {
+		align-items: flex-start;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.ajr-form.wp-block-ajr-forms-form .ajr-form__submit {
+		transition: none;
+	}
+}
