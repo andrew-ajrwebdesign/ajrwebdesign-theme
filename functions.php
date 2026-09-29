@@ -139,6 +139,7 @@ add_action(
 			'core/accordion-item'   => 'core/accordion',
 			'core/group'            => 'core/group',
 			'wpforms/form-selector' => 'wpforms',
+			'ajr-forms/form'        => 'ajr-forms',
 		);
 
 		foreach ( $block_styles as $block => $file ) {
