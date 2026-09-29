@@ -8,7 +8,7 @@
  * @package AJRWebDesign_Theme
  */
 ?>
-<!-- wp:group {"tagName":"section","metadata":{"name":"Services"},"align":"full","className":"trust-strip","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"backgroundColor":"accent-tint","layout":{"type":"constrained"}} -->
+<!-- wp:group {"tagName":"section","metadata":{"name":"Trust Strip"},"align":"full","className":"trust-strip","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"backgroundColor":"accent-tint","layout":{"type":"constrained"}} -->
 <section class="wp-block-group alignfull trust-strip has-accent-tint-background-color has-background" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:group {"layout":{"type":"constrained","justifyContent":"left"}} -->
 <div class="wp-block-group"><!-- wp:columns {"verticalAlignment":"center"} -->
 <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"33%","layout":{"type":"default"}} -->

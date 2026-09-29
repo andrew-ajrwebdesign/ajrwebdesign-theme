@@ -8,7 +8,7 @@
  * @package AJRWebDesign_Theme
  */
 ?>
-<!-- wp:group {"tagName":"section","metadata":{"name":"Services"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}},"shadow":"none"},"layout":{"type":"constrained"},"backgroundColor":"accent-tint","align":"full"} -->
+<!-- wp:group {"tagName":"section","metadata":{"name":"Care Plans"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80"}},"shadow":"none"},"layout":{"type":"constrained"},"backgroundColor":"accent-tint","align":"full"} -->
 <section class="wp-block-group alignfull has-accent-tint-background-color has-background" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--80);box-shadow:none"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"constrained","contentSize":"700px"}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)"><!-- wp:paragraph {"align":"center","style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"500","letterSpacing":"1px"},"elements":{"link":{"color":{"text":"var:preset|color|accent-dark"}}}},"textColor":"accent-dark","fontSize":"base"} -->
