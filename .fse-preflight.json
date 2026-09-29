@@ -5,8 +5,8 @@
 			"match": "single-ajr_case_study.html — no h1 block",
 			"why": "The h1 renders from the ajrwebdesign-core case-study-card block's hero variant (patterns/cs-hero.php), which a static template scan cannot see. Verified rendered: exactly one h1 per single, clean h1>h2>h3 hierarchy (2026-08-24 render check).",
 			"on": "2026-08-24",
-			"review": "Renewed at 1.12.1 (2026-09-28, testimonials move to AJR Core): re-verified over HTTP on the folio — all 4 case studies render exactly one h1, from the case-study-card hero variant. 1.12.1 only renames a block in patterns/case-study-testimonials.php.",
-			"expiresAtVersion": "1.12.1"
+			"review": "Renewed at 1.12.3 (2026-09-29, WPForms removed from the theme): re-verified over HTTP on the folio — all 4 case studies render exactly one h1 and four h2s. 1.12.2 added only the AJR Forms stylesheet and 1.12.3 only touches the contact-section pattern and removes wpforms.css; neither touches the case-study template or its patterns. (Previous: renewed at 1.12.1, 2026-09-28.)",
+			"expiresAtVersion": "1.12.3"
 		}
 	]
 }
