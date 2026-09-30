@@ -12,6 +12,9 @@ The standalone block theme powering [ajrwebdesign.com](https://ajrwebdesign.com)
 - **Fonts**: self-hosted variable fonts (Lora 400–700 headings, Noto Sans 400–700 body) declared via theme.json `fontFace`.
 - **Multilingual by structure**: header/footer use the plugin's `language-aware-nav` block (navigation resolved by `{menuSlug}-{lang}` slug convention) and `is-i18n`-classed strings registered with Polylang — one template part per area, every language.
 
+- **Featured Work** (1.13.0): `patterns/featured-work.php` is a list with no band or heading of its own: a Query Loop over case studies tagged `featured`, each drawn by the plugin's `case-study-card` block. Place it inside a section that introduces the work (on the home page it sits in "Proven results"). Tag a case study and it appears; nothing on the page is edited. The tag's taxonomy has no public pages, so AJR Core must have "Query Loop: filter by private taxonomies" switched on (AJR Core → Modules) with `case_study_tag` listed (AJR Core → Blocks), or the list shows every case study; the site plugin warns in wp-admin when it does. A page holds a snapshot of the pattern, including the tag's ID on that site, so insert it on each site rather than copying page content between sites. `assets/css/blocks/core/post-template.css` owns the list's grid and loads only where a post list is on the page.
+- **Patterns load in wp-admin and REST only** (1.13.0): the inserter whitelist in `functions.php` no longer runs on every front-end request, which used to execute every pattern file per page view.
+
 ## Layout
 
 ```

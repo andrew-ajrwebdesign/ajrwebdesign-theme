@@ -51,27 +51,54 @@ add_action(
 /**
  * Unregister patterns outside this site's namespaces so the inserter shows
  * only ajrwebdesign/* (theme) and ajrwebdesign-core/* (plugin) patterns.
+ *
+ * Runs only where an inserter can exist: wp-admin and the REST API (the Site
+ * Editor lists patterns over REST). It used to run on `init`, on every request.
+ * Listing the registry makes WordPress run every pattern file, so each visitor's
+ * page view executed all of them, and a pattern that looks something up (the
+ * Featured Work list finds its tag) cost two database queries on pages that
+ * never show it (performance review, 2026-09-30). A template's own
+ * `wp:pattern` references still load one by one, on demand.
  */
-add_action(
-	'init',
-	function () {
-		$registry  = WP_Block_Patterns_Registry::get_instance();
-		$whitelist = array( 'ajrwebdesign/', 'ajrwebdesign-core/' );
+function ajrwd_limit_patterns() {
+	$registry  = WP_Block_Patterns_Registry::get_instance();
+	$whitelist = array( 'ajrwebdesign/', 'ajrwebdesign-core/' );
 
-		foreach ( $registry->get_all_registered() as $pattern ) {
-			$keep = false;
-			foreach ( $whitelist as $prefix ) {
-				if ( str_starts_with( $pattern['name'], $prefix ) ) {
-					$keep = true;
-					break;
-				}
-			}
-			if ( ! $keep ) {
-				unregister_block_pattern( $pattern['name'] );
+	foreach ( $registry->get_all_registered() as $pattern ) {
+		$keep = false;
+		foreach ( $whitelist as $prefix ) {
+			if ( str_starts_with( $pattern['name'], $prefix ) ) {
+				$keep = true;
+				break;
 			}
 		}
+		if ( ! $keep ) {
+			unregister_block_pattern( $pattern['name'] );
+		}
+	}
+}
+add_action( 'admin_init', 'ajrwd_limit_patterns' );
+add_action( 'rest_api_init', 'ajrwd_limit_patterns' );
+
+/**
+ * The Featured Work list never paginates, so its query must not count every
+ * matching row to work out a page total it will not print. The list is a core
+ * Query Loop whose post template carries the class `featured-work__list`
+ * (patterns/featured-work.php).
+ */
+add_filter(
+	'query_loop_block_query_vars',
+	function ( $query, $block ) {
+		$class = is_object( $block ) && isset( $block->parsed_block['attrs']['className'] ) ? (string) $block->parsed_block['attrs']['className'] : '';
+
+		if ( is_array( $query ) && str_contains( $class, 'featured-work__list' ) ) {
+			$query['no_found_rows'] = true;
+		}
+
+		return $query;
 	},
-	20 // Run after core and plugins register their patterns.
+	10,
+	2
 );
 
 /**
@@ -138,6 +165,7 @@ add_action(
 			'core/list'           => 'core/list',
 			'core/accordion-item' => 'core/accordion',
 			'core/group'          => 'core/group',
+			'core/post-template'  => 'core/post-template',
 			'ajr-forms/form'      => 'ajr-forms',
 		);
 

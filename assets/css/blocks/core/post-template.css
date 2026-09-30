@@ -1,0 +1,28 @@
+/* core/post-template — the Featured Work list.
+   The first case study runs the full width; the rest sit two to a row. The
+   card block lays itself out from its own width (a container query in the
+   plugin), so a full-width card is screenshot-beside-text and a half-width
+   one stacks. This file owns only the grid: core already strips the list's
+   own margin, padding and bullets, and the section it sits in owns the space
+   around it. */
+.featured-work__list {
+	display: grid;
+	gap: var(--wp--preset--spacing--40);
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Core's flow spacing would push every card after the first down a step. */
+.featured-work__list > li {
+	margin-block: 0;
+}
+
+/* The first card, and a second card with nothing beside it, take the full row. */
+.featured-work__list > :where(li:first-child, li:nth-child(2):last-child) {
+	grid-column: 1 / -1;
+}
+
+@media (max-width: 781px) {
+	.featured-work__list {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
