@@ -14,12 +14,15 @@ The standalone block theme powering [ajrwebdesign.com](https://ajrwebdesign.com)
 
 - **Featured Work** (1.13.0): `patterns/featured-work.php` is a list with no band or heading of its own: a Query Loop over case studies tagged `featured`, each drawn by the plugin's `case-study-card` block. Place it inside a section that introduces the work (on the home page it sits in "Proven results"). Tag a case study and it appears; nothing on the page is edited. The tag's taxonomy has no public pages, so AJR Core must have "Query Loop: filter by private taxonomies" switched on (AJR Core → Modules) with `case_study_tag` listed (AJR Core → Blocks), or the list shows every case study; the site plugin warns in wp-admin when it does. A page holds a snapshot of the pattern, including the tag's ID on that site, so insert it on each site rather than copying page content between sites. `assets/css/blocks/core/post-template.css` owns the list's grid and loads only where a post list is on the page.
 - **Patterns load in wp-admin and REST only** (1.13.0): the inserter whitelist in `functions.php` no longer runs on every front-end request, which used to execute every pattern file per page view.
+- **Case Studies page** (1.14.0): the list of case studies is an ordinary page at `/case-studies/` (it was the Results page), not the post type's archive, so `templates/archive-ajr_case_study.html` is gone and AJR Core → Case studies → "Give them a list page" must be OFF. The page is two patterns: `patterns/case-studies-builds.php` (case studies tagged `site-build`, as cards with screenshots and scores) and `patterns/case-studies-audits.php` (every other case study, as compact before-and-after cards). Both are Query Loops with the same private-taxonomy dependency as Featured Work, and the same rule: insert them on each site, do not copy page content between sites.
+- **Single case study: three optional bands** (1.14.0): `case-study-changes.php`, `case-study-delivered.php` and `case-study-related.php` each hold one `case-study-card` block variant. A band whose block prints nothing (an audit has no "what was delivered") is removed by the site plugin, keyed on the class `cs-optional-band`; `global.css` hides an empty one when the plugin is off.
+- **Width tokens** (1.14.0): `settings.custom.width.intro` (700px) in theme.json. New patterns take their measure from `var(--wp--custom--width--intro)`; the older patterns still type theirs and are due to move.
 
 ## Layout
 
 ```
-templates/   10 block templates (page, home, single, archive, search, 404,
-             singular, index, single/archive-ajr_case_study)
+templates/   9 block templates (page, home, single, archive, search, 404,
+             singular, index, single-ajr_case_study)
 parts/       header.html, footer.html
 patterns/    PHP patterns emitting serialized block markup
 assets/      css/ (global + per-block), fonts/

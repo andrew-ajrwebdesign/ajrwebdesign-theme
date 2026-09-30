@@ -81,17 +81,18 @@ add_action( 'admin_init', 'ajrwd_limit_patterns' );
 add_action( 'rest_api_init', 'ajrwd_limit_patterns' );
 
 /**
- * The Featured Work list never paginates, so its query must not count every
- * matching row to work out a page total it will not print. The list is a core
- * Query Loop whose post template carries the class `featured-work__list`
- * (patterns/featured-work.php).
+ * The case-study lists never paginate, so their queries must not count every
+ * matching row to work out a page total they will not print. Each list is a
+ * core Query Loop whose post template carries the class `featured-work__list`
+ * (patterns/featured-work.php, patterns/case-studies-builds.php) or
+ * `case-studies__audits` (patterns/case-studies-audits.php).
  */
 add_filter(
 	'query_loop_block_query_vars',
 	function ( $query, $block ) {
 		$class = is_object( $block ) && isset( $block->parsed_block['attrs']['className'] ) ? (string) $block->parsed_block['attrs']['className'] : '';
 
-		if ( is_array( $query ) && str_contains( $class, 'featured-work__list' ) ) {
+		if ( is_array( $query ) && ( str_contains( $class, 'featured-work__list' ) || str_contains( $class, 'case-studies__audits' ) ) ) {
 			$query['no_found_rows'] = true;
 		}
 

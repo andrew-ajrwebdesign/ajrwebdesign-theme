@@ -20,7 +20,10 @@
 			"shadow": {
 				"dropdown": "var(--wp--preset--shadow--soft)"
 			},
-			"cardSubtitle": "var(--wp--preset--color--muted)"
+			"cardSubtitle": "var(--wp--preset--color--muted)",
+			"width": {
+				"intro": "700px"
+			}
 		},
 		"shadow": {
 			"presets": [
