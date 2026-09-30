@@ -136,6 +136,12 @@ a {
  * ------------------------------------------------------------------------- */
 .hero-section.has-background {
 	margin-block-start: 0;
+	/* Hero artwork may run past the content column into the band's own padding,
+	   but never past the band: between 881px and 1024px the case-study hero's
+	   decorative rings were wider than their column and gave every case study
+	   a sideways scroll of up to 88px (measured 2026-09-30). The band is the
+	   full viewport width, so clipping here cuts nothing that was visible. */
+	overflow-x: clip;
 }
 
 /* theme.json rounds every core/group (the card look) — full-width bands
