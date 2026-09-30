@@ -81,6 +81,36 @@ add_action( 'admin_init', 'ajrwd_limit_patterns' );
 add_action( 'rest_api_init', 'ajrwd_limit_patterns' );
 
 /**
+ * The term IDs of the case-study tags whose case studies the Case Studies
+ * page's FIRST list shows (patterns/case-studies-builds.php) and its second
+ * list leaves out (patterns/case-studies-audits.php): `site-build`, a site
+ * built from scratch, and `site-care`, a site somebody else built, made faster
+ * and looked after (1.15.0). One list of slugs for both patterns, so a case
+ * study can never be in both lists or in neither.
+ *
+ * Looked up by slug because term IDs differ between sites. A tag that does not
+ * exist yet is left out; with neither, the result is empty and both patterns
+ * leave their filter off. Runs only when a pattern file runs (inserting it, or
+ * a script refreshing a page), never on a visitor's page view: the page holds
+ * the pattern's output with the IDs in it.
+ *
+ * @return int[]
+ */
+function ajrwd_case_study_list_terms() {
+	$ids = array();
+	if ( ! taxonomy_exists( 'case_study_tag' ) ) {
+		return $ids;
+	}
+	foreach ( array( 'site-build', 'site-care' ) as $slug ) {
+		$term = get_term_by( 'slug', $slug, 'case_study_tag' );
+		if ( $term instanceof WP_Term ) {
+			$ids[] = (int) $term->term_id;
+		}
+	}
+	return $ids;
+}
+
+/**
  * The case-study lists never paginate, so their queries must not count every
  * matching row to work out a page total they will not print. Each list is a
  * core Query Loop whose post template carries the class `featured-work__list`
