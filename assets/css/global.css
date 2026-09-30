@@ -554,6 +554,15 @@ p.has-accent-dark-color.has-sm-font-size {
 	}
 }
 
+/* Optional bands on the single case study (what changed, what was delivered,
+	more case studies). The site plugin removes a band whose block printed
+	nothing; with the plugin off the block prints nothing either and no one
+	removes the band, so an empty one is hidden here instead of leaving a
+	stripe of padding. */
+.cs-optional-band:not(:has(*)) {
+	display: none;
+}
+
 /* Footer polish (2026-08-24): eyebrow-style column headings, tighter and
 	smaller menu items, socials tucked under the brand column. */
 footer.wp-block-template-part .footer-heading {

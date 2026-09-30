@@ -18,3 +18,9 @@ node_modules/
 
 # Tooling
 .claude/
+
+# Never in a theme repo
+vendor/
+dist/
+*.key
+*.pem
