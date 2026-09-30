@@ -3,18 +3,19 @@
  * Title: Case Studies: Audits and Fixes
  * Slug: ajrwebdesign/case-studies-audits
  * Categories: featured
- * Description: For the Case Studies page: an intro on a grey band, then every case study that is NOT a site build as a compact before-and-after card, two to a row. A query, so a new audit appears by itself.
+ * Description: For the Case Studies page: an intro on a grey band, then every case study the band above does not list (not tagged "site-build" or "site-care") as a compact before-and-after card, two to a row. A query, so a new audit appears by itself.
  *
  * @package AJRWebDesign_Theme
  */
 
-// Every case study except the ones tagged `site-build`, which the band above this one lists
+// Every case study except the ones tagged `site-build` or `site-care`, which the band above this one lists
+// (both patterns take the tags from ajrwd_case_study_list_terms() in functions.php)
 // (see featured-work.php for why the term is looked up by slug, and for the AJR Core module
 // the filter depends on). Before the tag exists nothing is excluded.
 //
 // ⚠️ The list shows the 12 newest and has no second page: a 13th audit drops the oldest off
 // this page. Raise perPage, or add pagination, before there are 13.
-$ajrwd_csa_term  = taxonomy_exists( 'case_study_tag' ) ? get_term_by( 'slug', 'site-build', 'case_study_tag' ) : false;
+$ajrwd_csa_terms = ajrwd_case_study_list_terms();
 $ajrwd_csa_query = array(
 	'perPage'  => 12,
 	'pages'    => 0,
@@ -24,9 +25,9 @@ $ajrwd_csa_query = array(
 	'orderBy'  => 'date',
 	'inherit'  => false,
 );
-if ( $ajrwd_csa_term instanceof WP_Term ) {
+if ( array() !== $ajrwd_csa_terms ) {
 	$ajrwd_csa_query['taxQuery'] = array(
-		'exclude' => array( 'case_study_tag' => array( (int) $ajrwd_csa_term->term_id ) ),
+		'exclude' => array( 'case_study_tag' => $ajrwd_csa_terms ),
 	);
 }
 

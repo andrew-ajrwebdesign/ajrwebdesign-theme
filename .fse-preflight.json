@@ -5,15 +5,15 @@
 			"match": "single-ajr_case_study.html — no h1 block",
 			"why": "The h1 renders from the ajrwebdesign-core case-study-card block's hero variant (patterns/cs-hero.php), which a static template scan cannot see. Verified rendered: exactly one h1 per single, clean h1>h2>h3 hierarchy (2026-08-24 render check).",
 			"on": "2026-08-24",
-			"review": "Renewed at 1.14.0 (2026-09-30: three optional bands added to the single, each with an h2; the archive template removed): re-verified over HTTP on the local folio with 1.14.0 and ajrwebdesign-core 1.11.0 in place. All 6 case studies (4 audits, 2 site builds) render exactly one h1 with no skipped heading level; outlines 12323332232 (audits), 1233223332232 (NYC) and 12332333223332232 (OC Legal). (Previous: 1.13.0 same day; 1.12.6, 2026-09-29; 1.12.5, 1.12.4, 1.12.3 same day; 1.12.1, 2026-09-28.)",
-			"expiresAtVersion": "1.14.0"
+			"review": "Renewed at 1.15.0 (2026-09-30: no template changed; two list patterns of the Case Studies page changed): re-verified over HTTP on the local folio with 1.15.0 and ajrwebdesign-core 1.14.0 in place (featured-work-build/shoot.mjs, 1440 and 375 wide). All 5 case studies checked (NYC, Bill Ward, 7 Dees, OC Legal and one audit) render exactly one h1, one main and no skipped heading level. Previously: Renewed at 1.14.0 (2026-09-30: three optional bands added to the single, each with an h2; the archive template removed): re-verified over HTTP on the local folio with 1.14.0 and ajrwebdesign-core 1.11.0 in place. All 6 case studies (4 audits, 2 site builds) render exactly one h1 with no skipped heading level; outlines 12323332232 (audits), 1233223332232 (NYC) and 12332333223332232 (OC Legal). (Previous: 1.13.0 same day; 1.12.6, 2026-09-29; 1.12.5, 1.12.4, 1.12.3 same day; 1.12.1, 2026-09-28.)",
+			"expiresAtVersion": "1.15.0"
 		},
 		{
 			"check": "theme layout width tokens",
 			"match": "23 layout width(s) typed into block markup",
-			"why": "Older than this release: the 23 contentSize values are in templates/home.html and 11 pattern files written before this check became a FAIL (fse-preflight 8309282, late September 2026). 1.14.0 adds none and removes one (patterns/case-studies-grid.php is deleted): its five new patterns take their one width from the new theme.json token settings.custom.width.intro, which is the first step of the move. Converting the other 23 touches 12 files whose block comments must carry the variable escaped, and every page that holds a snapshot of those patterns, so it stays its own release with its own visual check. The match names the count, so one more typed width stops this accept matching.",
+			"why": "Older than this release: the 23 contentSize values are in templates/home.html and 11 pattern files written before this check became a FAIL (fse-preflight 8309282, late September 2026). 1.14.0 adds none and removes one (patterns/case-studies-grid.php is deleted): its five new patterns take their one width from the new theme.json token settings.custom.width.intro, which is the first step of the move. Converting the other 23 touches 12 files whose block comments must carry the variable escaped, and every page that holds a snapshot of those patterns, so it stays its own release with its own visual check. The match names the count, so one more typed width stops this accept matching. Renewed at 1.15.0 (2026-09-30): that release changes two patterns' query filter and wording only and adds no width.",
 			"on": "2026-09-30",
-			"expiresAtVersion": "1.14.0"
+			"expiresAtVersion": "1.15.0"
 		}
 	]
 }
