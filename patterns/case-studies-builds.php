@@ -11,8 +11,8 @@
 // The list is a Query Loop filtered to two case-study tags: `site-build` (a site built from
 // scratch) and, since 1.15.0, `site-care` (a site somebody else built, made faster and looked
 // after: the site plugin shows it the same way, with screenshots and a scorecard). See
-// featured-work.php for why a term is looked up by slug, and for the AJR Core module the filter
-// depends on. Before either tag exists the filter is left out and every case study shows.
+// featured-work.php for why a term is looked up by slug, and for the site-plugin class the
+// filter depends on. Before either tag exists the filter is left out and every case study shows.
 // The tags come from ajrwd_case_study_list_terms() (functions.php), which the second list
 // excludes too.
 //

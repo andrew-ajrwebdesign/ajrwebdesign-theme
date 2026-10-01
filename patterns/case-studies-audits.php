@@ -10,7 +10,7 @@
 
 // Every case study except the ones tagged `site-build` or `site-care`, which the band above this one lists
 // (both patterns take the tags from ajrwd_case_study_list_terms() in functions.php)
-// (see featured-work.php for why the term is looked up by slug, and for the AJR Core module
+// (see featured-work.php for why the term is looked up by slug, and for the site-plugin class
 // the filter depends on). Before the tag exists nothing is excluded.
 //
 // ⚠️ The list shows the 12 newest and has no second page: a 13th audit drops the oldest off

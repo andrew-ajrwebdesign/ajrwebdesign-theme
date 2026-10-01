@@ -14,9 +14,9 @@
 // scores and an audit with its before and after numbers.
 //
 // ⚠️ `case_study_tag` has no public pages, and WordPress silently ignores a Query Loop filter
-// on such a taxonomy (the list would show EVERY case study). AJR Core's "Query Loop: filter by
-// private taxonomies" module restores it: switch it on in AJR Core → Modules and list the
-// taxonomy in AJR Core → Blocks. The site plugin warns in wp-admin when this is missing.
+// on such a taxonomy (the list would show EVERY case study). The site plugin restores it
+// (ajrwebdesign-core 1.16.0+, CaseStudies\PrivateTagQuery); until 1.16.0 it was AJR Core's
+// "Query Loop: filter by private taxonomies" module.
 //
 // A Query Loop stores the term's ID, which differs between sites, so it is looked up here by
 // slug. Before the tag exists the filter is left out and the three newest case studies show.
